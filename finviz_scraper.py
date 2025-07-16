@@ -15,11 +15,11 @@ load_dotenv()
 
 # Database configuration
 DB_CONFIG = {
-    'host': os.getenv('PG_HOST', 'localhost'),
+    'host': os.getenv('PG_HOST', 'newsdb.ctws2qw08w49.eu-north-1.rds.amazonaws.com'),
     'port': os.getenv('PG_PORT', '5432'),
     'database': os.getenv('PG_DB', 'searchdb'),
-    'user': os.getenv('PG_USER', 'hiteshjuneja'),
-    'password': os.getenv('PG_PASS', '')  # Leave blank for trust auth
+    'user': os.getenv('PG_USER', 'Arash'),
+    'password': os.getenv('PG_PASS', 'DCV0zBmL1!')  # Leave blank for trust auth
 }
 
 # Rotate user agents to avoid detection

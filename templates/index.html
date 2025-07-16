@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock News Scanner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #1a1a2e;
+            --secondary-color: #16213e;
+            --accent-color: #e94560;
+            --success-color: #0f9d58;
+            --text-color: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border-color: #2a2a3e;
+            --card-bg: #0f0f1e;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+            color: var(--text-color);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff 0%, #e94560 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.2em;
+        }
+
+        .search-section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .search-controls {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 0 20px rgba(233, 69, 96, 0.2);
+        }
+
+        .float-filter {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 10px 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .float-filter label {
+            color: var(--text-secondary);
+            white-space: nowrap;
+        }
+
+        .float-filter input {
+            width: 80px;
+            padding: 5px 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-color);
+        }
+
+        .search-btn {
+            padding: 15px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--accent-color) 0%, #ff6b6b 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .search-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(233, 69, 96, 0.4);
+        }
+
+        .search-btn:active {
+            transform: translateY(0);
+        }
+
+        .results-section {
+            display: grid;
+            gap: 20px;
+        }
+
+        .stock-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .stock-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+            box-shadow: 0 15px 40px rgba(233, 69, 96, 0.2);
+        }
+
+        .stock-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .stock-info {
+            display: flex;
+            align-items: baseline;
+            gap: 15px;
+        }
+
+        .ticker {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .company-name {
+            font-size: 1.1em;
+            color: var(--text-secondary);
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .stock-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .metric {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .metric-label {
+            font-size: 0.85em;
+            color: var(--text-secondary);
+            margin-bottom: 5px;
+        }
+
+        .metric-value {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .articles-list {
+            display: grid;
+            gap: 12px;
+        }
+
+        .article-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .article-item:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: var(--accent-color);
+        }
+
+        .article-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-color);
+            line-height: 1.4;
+        }
+
+        .article-summary {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .article-date {
+            font-size: 0.85em;
+            color: var(--text-secondary);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px;
+            font-size: 1.2em;
+            color: var(--text-secondary);
+        }
+
+        .loading::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            border: 3px solid var(--border-color);
+            border-radius: 50%;
+            border-top-color: var(--accent-color);
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px;
+            color: var(--text-secondary);
+            font-size: 1.1em;
+        }
+
+        .error {
+            background: rgba(233, 69, 96, 0.1);
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .expand-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .expand-btn:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .search-controls {
+                grid-template-columns: 1fr;
+            }
+
+            .stock-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        .keyword-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .keyword-tag {
+            background: rgba(255, 255, 255, 0.10);
+            border: 1px solid var(--border-color);
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 0.85em;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .keyword-tag button {
+            background: none;
+            border: none;
+            color: var(--accent-color);
+            cursor: pointer;
+            font-weight: 700;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stock News Scanner</h1>
+            <p class="subtitle">Search for keywords in stock news articles</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Enter search term (e.g., 'reverse split', 'merger', 'offering')" />
+                    <div id="keywordTags" class="keyword-tags"></div>
+                </div>
+                <div class="float-filter">
+                    <label>Max Float:</label>
+                    <input type="number" id="floatInput" value="10" step="0.1" />
+                    <span>M</span>
+                </div>
+                <button class="search-btn" onclick="searchStocks()">Search</button>
+                <button id="scrapeBtn" class="search-btn" style="background: linear-gradient(135deg, #0f9d58 0%, #43e97b 100%); margin-left: 10px;" onclick="triggerScrape()">
+                    ▶️ Scrape Finviz
+                </button>
+            </div>
+            <div id="scrapeStatusBar" style="margin-top: 18px; font-size: 1.1em; color: var(--text-secondary);"></div>
+        </div>
+
+        <div id="results" class="results-section"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+    <script>
+        const API_URL = '/api';
+
+        // --- New keyword‑chip logic ---
+        let keywords = [];
+
+        function addKeyword(str) {
+            const kw = str.trim();
+            if (kw && !keywords.includes(kw)) {
+                keywords.push(kw);
+                renderKeywordTags();
+            }
+        }
+
+        function removeKeyword(idx) {
+            keywords.splice(idx, 1);
+            renderKeywordTags();
+        }
+
+        function renderKeywordTags() {
+            const wrap = document.getElementById('keywordTags');
+            wrap.innerHTML = keywords
+                .map((kw, i) => `
+                    <span class="keyword-tag">
+                        ${kw}
+                        <button onclick="removeKeyword(${i})">&times;</button>
+                    </span>
+                `)
+                .join('');
+        }
+
+        // Whenever the user presses space, comma, or Enter inside searchInput,
+        // treat the current value as a keyword and reset the box.
+        document.getElementById('searchInput').addEventListener('keydown', e => {
+            if ([' ', ',', 'Enter'].includes(e.key)) {
+                e.preventDefault();
+                addKeyword(e.target.value);
+                e.target.value = '';
+            }
+        });
+
+        function formatNumber(num) {
+            if (num === null || num === undefined) return 'N/A';
+            if (num >= 1e9) return (num / 1e9).toFixed(2) + 'B';
+            if (num >= 1e6) return (num / 1e6).toFixed(2) + 'M';
+            if (num >= 1e3) return (num / 1e3).toFixed(2) + 'K';
+            return num.toLocaleString();
+        }
+
+        function formatDate(dateStr) {
+            if (!dateStr) return 'N/A';
+            const date = new Date(dateStr);
+            return date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+        }
+
+        async function searchStocks() {
+            // Include any residual text in the box as a final keyword
+            const searchInput = document.getElementById('searchInput');
+            const maxFloat = document.getElementById('floatInput').value;
+            if (searchInput.value.trim()) addKeyword(searchInput.value);
+
+            if (keywords.length === 0) {
+                alert('Please enter at least one keyword');
+                return;
+            }
+
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '<div class="loading">Searching...</div>';
+
+            try {
+                const query = keywords.join(',');
+                const response = await fetch(`${API_URL}/search?q=${encodeURIComponent(query)}&float_max=${maxFloat}`);
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.error || 'Search failed');
+                }
+
+                displayResults(data);
+            } catch (error) {
+                resultsDiv.innerHTML = `<div class="error">Error: ${error.message}</div>`;
+            }
+        }
+
+        function displayResults(data) {
+            const resultsDiv = document.getElementById('results');
+
+            if (!data.results || data.results.length === 0) {
+                resultsDiv.innerHTML = '<div class="no-results">No results found. Try a different search term.</div>';
+                return;
+            }
+
+            const cards = data.results.map(stock => {
+                // Safely format price
+                const priceValue = (stock.current_price !== null && stock.current_price !== undefined)
+                    ? Number(stock.current_price).toFixed(2)   // handles numeric strings too
+                    : 'N/A';
+
+                return `
+                    <div class="stock-card" onclick="viewStock('${stock.ticker}')">
+                        <div class="stock-header">
+                            <div class="stock-info">
+                                <div class="ticker">${stock.ticker}</div>
+                                <div class="company-name">${stock.company_name || 'N/A'}</div>
+                            </div>
+                        </div>
+
+                        <div class="stock-metrics">
+                            <div class="metric">
+                                <div class="metric-label">Price</div>
+                                <div class="metric-value">$${priceValue}</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-label">Market Cap</div>
+                                <div class="metric-value">${formatNumber(stock.market_cap)}</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-label">Volume</div>
+                                <div class="metric-value">${formatNumber(stock.volume)}</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-label">Float</div>
+                                <div class="metric-value">${formatNumber(stock.float_shares)}M</div>
+                            </div>
+                        </div>
+
+                        <div class="articles-list">
+                            ${stock.articles.slice(0, 3).map(article => `
+                                <div class="article-item">
+                                    <a class="article-title"
+                                       href="${article.url}"
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       onclick="event.stopPropagation()">${article.title}</a>
+                                    ${article.summary ? `<div class="article-summary">${article.summary}</div>` : ''}
+                                    <div class="article-date">${formatDate(article.date)}</div>
+                                </div>
+                            `).join('')}
+                            ${stock.articles.length > 3 ? `
+                                <button class="expand-btn">View ${stock.articles.length - 3} more articles</button>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            resultsDiv.innerHTML = cards;
+        }
+
+        function viewStock(ticker) {
+            // Navigate to the Finviz quote page for a richer overview
+            window.open(`https://finviz.com/quote.ashx?t=${ticker}`, '_blank', 'noopener');
+        }
+
+        // Allow Enter key to trigger search
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                // Only trigger search if box is empty (all keywords entered)
+                if (!e.target.value.trim()) {
+                    searchStocks();
+                }
+            }
+        });
+
+        async function triggerScrape() {
+            const btn = document.getElementById('scrapeBtn');
+            btn.disabled = true;
+            btn.textContent = '⏳ Scraping...';
+            setScrapeStatusBar('Scraping Finviz...');
+            try {
+                const resp = await fetch('/api/scrape', { method: 'POST' });
+                if (!resp.ok && resp.status === 409) {
+                    setScrapeStatusBar('Scraping already in progress.');
+                } else if (!resp.ok) {
+                    setScrapeStatusBar('Failed to start scraping.');
+                } else {
+                    setScrapeStatusBar('Scraping started...');
+                }
+            } catch (e) {
+                setScrapeStatusBar('Failed to start scraping.');
+            }
+            pollScrapeStatus();
+        }
+
+        function setScrapeStatusBar(msg) {
+            document.getElementById('scrapeStatusBar').textContent = msg;
+        }
+
+        function formatDenmarkTime(isoString) {
+            if (!isoString) return 'N/A';
+            try {
+                const dt = luxon.DateTime.fromISO(isoString, { zone: 'Europe/Copenhagen' });
+                return dt.setZone('Europe/Copenhagen').toFormat('yyyy-MM-dd HH:mm:ss ZZZZ');
+            } catch {
+                return isoString;
+            }
+        }
+
+        async function pollScrapeStatus() {
+            const btn = document.getElementById('scrapeBtn');
+            let polling = true;
+            while (polling) {
+                try {
+                    const resp = await fetch('/api/scrape_status');
+                    const data = await resp.json();
+                    if (data.status === 'scraping') {
+                        setScrapeStatusBar('Scraping Finviz...');
+                        btn.disabled = true;
+                        btn.textContent = '⏳ Scraping...';
+                    } else if (data.status === 'done') {
+                        setScrapeStatusBar('Scraping complete. Last scraped: ' + formatDenmarkTime(data.last_scraped));
+                        btn.disabled = false;
+                        btn.textContent = '▶️ Scrape Finviz';
+                        polling = false;
+                    } else if (data.status === 'error') {
+                        setScrapeStatusBar('Scraping failed: ' + (data.error || 'Unknown error'));
+                        btn.disabled = false;
+                        btn.textContent = '▶️ Scrape Finviz';
+                        polling = false;
+                    } else {
+                        setScrapeStatusBar('Idle. Last scraped: ' + formatDenmarkTime(data.last_scraped));
+                        btn.disabled = false;
+                        btn.textContent = '▶️ Scrape Finviz';
+                        polling = false;
+                    }
+                } catch (e) {
+                    setScrapeStatusBar('Error checking status.');
+                    btn.disabled = false;
+                    btn.textContent = '▶️ Scrape Finviz';
+                    polling = false;
+                }
+                if (polling) await new Promise(r => setTimeout(r, 2000));
+            }
+        }
+
+        // On page load, show current status
+        window.addEventListener('DOMContentLoaded', () => {
+            pollScrapeStatus();
+        });
+    </script>
+</body>
+</html>

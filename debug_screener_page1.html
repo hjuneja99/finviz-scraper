@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en" class=" dark">
+<head>
+<title>Stock Screener - Overview u10 </title>
+<meta charset="UTF-8"><meta name="viewport" content="width=1024"><meta name="description" content="Stock screener for investors and traders, financial visualizations.">
+<meta name="robots" content="noindex">
+
+            <link rel="preload" href="/fonts/lato-v17-latin-ext_latin-regular.woff2" as="font" crossorigin>
+            <link rel="preload" href="/fonts/lato-v17-latin-ext_latin-700.woff2" as="font" crossorigin>
+            <link rel="preload" href="/fonts/lato-v17-latin-ext_latin-900.woff2" as="font" crossorigin>
+            <link rel="preload" href="/fonts/inter-latin.woff2" as="font" crossorigin>
+        
+            <script>
+                window.notificationsArray = [];
+                window.renderScriptNotLoaded = function () {};
+                window.handleScriptNotLoaded = function (element) {
+                    window.notificationsArray.push(element);
+                    window.sentryDisabled = true;
+                    window.handleScriptNotLoaded = function () {};
+                };
+            </script>
+        <link rel="stylesheet" href="/assets/dist/redesign.0c69b900.css" type="text/css" onerror="window.handleScriptNotLoaded(this)">
+<link rel="stylesheet" href="/assets/dist/main.8c22a4ee.css" type="text/css" onerror="window.handleScriptNotLoaded(this)">
+<link rel="icon" type="image/png" href="/favicon_2x.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
+<script async=true>
+    !(function(q,_name){q[_name]=q[_name]||function k(){(k.q=k.q||[]).push(arguments)},q[_name].v=q[_name].v||2,q[_name].s="1";!(function(q,k,F,H){function m(F,H){try{m=q.localStorage,(F=JSON.parse(m[decodeURI(decodeURI('%67%25%365%25%37%34I%257%34e%6d'))]("_aQS01OUU2MkU1RURCQzRDMzUyMTIwQkM4ODYtMTE0")).lgk||[])&&(H=q[k].pubads())&&F.forEach((function(q){q&&q[0]&&H.setTargeting(q[0],q[1]||"")}))}catch(N){}var m}try{(H=q[k]=q[k]||{}).cmd=H.cmd||[],typeof H.pubads===F?m():typeof H.cmd.unshift===F?H.cmd.unshift(m):H.cmd.push(m)}catch(N){}})(window,decodeURI(decodeURI('%25%367o%25%36fg%256c%25%36%35%2574%256%31%25%36%37')),"function");;!(function(q){q.__admiral_getConsentForGTM=function(k){function F(q,F){k((function(q,k){const F=q&&q.purpose&&q.purpose.consents||{};return{adConsentGranted:k||!!F[1],adUserData:k||!!F[7],adPersonalization:k||!!F[3],analyticsConsentGranted:k||!!F[1],personalizationConsentGranted:k||!!F[5],functionalityConsentGranted:k||!1,securityConsentGranted:k||!0}})(q,!F))}q[_name]("after","cmp.loaded",(function(k){k&&k.tcData&&k.tcData.gdprApplies?(k.consentKnown&&F(k.tcData,!0),q[_name]("after","cmp.updated",(function(q){F(q.tcData,!0)}))):F({},!1)}))}})(window);})(window,decodeURI(decodeURI('a%256%34m%25%369%25%37%32%256%31l')));!(function(q,k,F,H){F=q.createElement(k),q=q.getElementsByTagName(k)[0],F.async=1,F.src="https://urbanlaurel.com/assets/js/q2o3um29vhadcznq.vendor.js",(H=0)&&H(F),q.parentNode.insertBefore(F,q)})(document,"script");;;!(function(q,k,F,H,m){function N(){for(var q=[],F=0;F<arguments.length;F++)q.push(arguments[F]);if(!q.length)return m;"ping"===q[0]?q[2]({gdprAppliesGlobally:!!k[decodeURI(decodeURI('_%25%35%66c%6d%25%37%30%254%37%25%364%25%370%257%32A%2570%25%370%256%63%2569%65%73%2547%256%63o%25%36%32%25%361%25%36%63%6c%79'))],cmpLoaded:!1,cmpStatus:"stub"}):q.length>0&&m.push(q)}function L(q){if(q&&q.data&&q.source){var H,m=q.source,N="__tcfapiCall",L="string"==typeof q.data&&q.data.indexOf(N)>=0;(H=L?((function(q){try{return JSON.parse(q)}catch(k){}})(q.data)||{})[N]:(q.data||{})[N])&&k[F](H.command,H.version,(function(q,k){var F={__tcfapiReturn:{returnValue:q,success:k,callId:H.callId}};m&&m.postMessage(L?JSON.stringify(F):F,"*")}),H.parameter)}}!(function t(){if(!k.frames[H]){var F=q.body;if(F){var m=q.createElement("iframe");m.style.display="none",m.name=H,F.appendChild(m)}else setTimeout(t,5)}})(),N.v=1,"function"!=typeof k[F]&&(k[F]=k[F]||N,k.addEventListener?k.addEventListener("message",L,!1):k.attachEvent&&k.attachEvent("onmessage",L))})(document,window,"__tcfapi","__tcfapiLocator",[]);;;!(function(q,k,F,H,m,N,L,t,A,K,R){function Y(){for(var q=[],k=arguments.length,F=0;F<k;F++)q.push(arguments[F]);var H,m=q[1],N=typeof m===L,t=q[2],Y={gppVersion:"1.1",cmpStatus:"stub",cmpDisplayStatus:"hidden",signalStatus:"not ready",supportedAPIs:["7:usnat"].reduce((function(q,k){return k&&q.push(k),q}),[]),cmpId:9,sectionList:[],applicableSections:[0],gppString:"",parsedSections:{}};function v(q){N&&m(q,!0)}switch(q[0]){case"ping":return v(Y);case"queue":return A;case"events":return K;case"addEventListener":return N&&(H=++R,K.push({id:H,callback:m,parameter:t})),v({eventName:"listenerRegistered",listenerId:H,data:!0,pingData:Y});case"removeEventListener":for(H=!1,F=0;F<K.length;F++)if(K[F].id===t){K.splice(F,1),H=!0;break}return v(H);case"hasSection":case"getSection":case"getField":return v(null);default:return void A.push(q)}}Y.v=2,typeof k[F]!==L&&(k[F]=k[F]||Y,k[t]&&k[t]("message",(function(q,H){var L="string"==typeof q.data;(H=L?((function(q){try{return JSON.parse(q)}catch(k){}})(q.data)||{})[m]:(q.data||{})[m])&&k[F](H.command,(function(k,F){var m={__gppReturn:{returnValue:k,success:F,callId:H.callId}};q.source.postMessage(L?JSON.stringify(m):m,"*")}),N in H?H[N]:null,H.version||1)}),!1),(function v(){if(!k.frames[H]){var F=q.body;if(F){var m=q.createElement("iframe");m.style.display="none",m.name=H,F.appendChild(m)}else setTimeout(v,5)}})())})(document,window,"__gpp","__gppLocator","__gppCall","parameter","function","addEventListener",[],[],0);
+    ;(function () {
+        window.ic_privacySelectorLoaded = false;
+
+        window.admiral("after", "candidate.dismissed", function () {
+            if (window.checkBannersLoaded) checkBannersLoaded();
+        });
+
+        window.admiral("after", "cmp.loaded", function (eventArg) {
+            console.log("Admiral CMP Loaded ", eventArg);
+            if (eventArg.euVisitor) return;
+            try {
+                __gpp("addEventListener", function (tcData) {
+                    window.ic_privacySelectorLoaded = true;
+                });
+            } catch (e) {
+                console.error(e)
+            }
+        });
+    })();
+</script><script>
+            FinvizSettings = {
+                versionImages: 25,
+                hasUserPremium: false,
+                name: "",
+                email: "",
+                nodeChartsDomain: "https://charts2-node.finviz.com",
+                hasUserStickyHeader: false,
+                adsProvider: 1,
+                hasRedesignEnabled: true,
+                hasRedesignPortfolio: false,
+                hasDarkTheme: true,
+                quoteSearchExt: '',
+                isJoinBannerVisible: false,
+                hasCustomExtendedHoursEnabled: true,
+                hasKnowledgeBase: false,
+            };
+        </script><script src="/assets/dist/script/browser_check.7d9dede5.js"></script><script src="/assets/dist/script/vendor/boxover.202b25a7.js" defer></script>
+<script src="/assets/dist/runtime.0abae15d.js" onerror="window.handleScriptNotLoaded(this)"></script><script src="/assets/dist/libs_init.2663879d.js" onerror="window.handleScriptNotLoaded(this)"></script><script src="/assets/dist/1150.674e9dd4.js" onerror="window.handleScriptNotLoaded(this)"></script><script src="/assets/dist/7470.ad0c6def.js" onerror="window.handleScriptNotLoaded(this)"></script><script src="/assets/dist/1545.9ab71943.js" onerror="window.handleScriptNotLoaded(this)"></script><script src="/assets/dist/5747.903d5356.js" onerror="window.handleScriptNotLoaded(this)"></script><script src="/assets/dist/1213.8c90e22e.js" onerror="window.handleScriptNotLoaded(this)"></script><script src="/assets/dist/4841.7dad25a8.js" onerror="window.handleScriptNotLoaded(this)"></script><script src="/assets/dist/5762.980ea30d.js" onerror="window.handleScriptNotLoaded(this)"></script><script src="/assets/dist/header.91680479.js" onerror="window.handleScriptNotLoaded(this)"></script><script type="text/javascript">
+            var portfolioRowsLimit=50;
+            function ScreenerSelectOnChange() {}
+            FinvizSettings.screenerCurrentTimeframe = {timeframe: "d", dateRange: null}
+
+            function trackPagination(source) {
+                window.gtag && window.gtag('event', 'click', {
+                    event_category: 'pagination',
+                    event_label: source });
+            }
+
+            function handleETFCheckboxClick(input) {
+                fetch('/api/set_cookie.ashx?cookie=disabledETFFiltersAll&value=' + !input.checked )
+                    .catch(function(){})
+                    .then(function(){ location.reload() })
+            }
+        </script><script src="/assets/dist/script/screener.63059768.js" type="text/javascript" onerror="window.handleScriptNotLoaded(this)"></script>
+<script>FinvizSettings.defaultPeriod = 'd'</script>
+<script src="/assets/dist/2898.00e720e0.js" onerror="window.handleScriptNotLoaded(this)"></script><script src="/assets/dist/954.81233401.js" onerror="window.handleScriptNotLoaded(this)"></script><script src="/assets/dist/6153.1c253ff1.js" onerror="window.handleScriptNotLoaded(this)"></script><script src="/assets/dist/1683.7edc4c82.js" onerror="window.handleScriptNotLoaded(this)"></script><script src="/assets/dist/8793.38c993b8.js" onerror="window.handleScriptNotLoaded(this)"></script><script src="/assets/dist/6019.6dcfca98.js" onerror="window.handleScriptNotLoaded(this)"></script><script src="/assets/dist/screener.106ada75.js" onerror="window.handleScriptNotLoaded(this)"></script></head>
+
+          <script>
+            const channelIdToLabel = {
+                '1': 'MarketWatch',
+                '2': 'WSJ',
+                '3': 'Reuters',
+                '4': 'Yahoo Finance',
+                '5': 'CNN',
+                '6': 'The New York Times',
+                '7': 'Bloomberg',
+                '9': 'BBC',
+                '10': 'CNBC',
+                '11': 'Fox Business',
+                '102': 'Mish\'s Global Economic Trend Analysis',
+                '105': 'Trader Feed',
+                '113': 'Howard Lindzon',
+                '114': 'Seeking Alpha',
+                '123': 'Fallond Stock Picks',
+                '132': 'Zero Hedge',
+                '133': 'market folly',
+                '136': 'Daily Reckoning',
+                '141': 'Abnormal Returns',
+                '142': 'Calculated Risk',
+            }
+            function trackAndOpenNews(event, channel, url) {
+              event.preventDefault()
+              window.open(url, '_blank')
+
+              let channelLabel
+              if (typeof channel === 'string') {
+                const isInternalNewsUrl = url.startsWith('/news/')
+                channelLabel = isInternalNewsUrl ? 'internal-' + channel : channel
+              } else {
+                const label = channelIdToLabel[channel]
+                channelLabel = label !== undefined ? label : channel
+              }
+              window.gtag && window.gtag('event', 'click', {
+                send_to: 'G-ZT9VQEWD4N',
+                non_interaction: true,
+                event_category: 'news',
+                event_label: channelLabel,
+                value: 1 });
+            }
+          </script>
+          <body class="m-0 yellow-tooltip is-screener chart-tooltip">
+            <script>
+                window.adLayoutVersion = 'control';
+                window.adLoggedIn = 'NotLoggedIn';
+
+                var cookieName = 'fv_block';
+                var selector = '[data-google-query-id]';
+                var selectorFrame = selector + ' iframe, ' + selector + ' [id*=aax]';
+                var cookieExpiry = 5 * 60 * 1000; // 5min
+                var checkTimeout = 20 * 1000; // 20sec
+
+                function getCookie(value) {
+                    var expiration = +new Date() + cookieExpiry;
+                    return cookieName + '=' + value + '; expires=' + (new Date(expiration)).toUTCString() + '; path=/';
+                }
+
+                var finvizBannersLoaded = false;
+                function loadFinvizBanners(setCookie) {
+                    
+                    if (setCookie) document.cookie = getCookie('block');
+                    finvizBannersLoaded = true;
+                    var s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = '/assets/dist/script/finviz_b.d6c84ef3.js';
+                    document.head.appendChild(s);
+                }
+
+                function checkBannersLoaded() {
+                    var checkEnd = +new Date() + checkTimeout;
+                    function asyncCheckIfExists(selector, resolve) {
+                        var now = +new Date();
+                        var container = document.querySelector(selector);
+                        if (!container && checkEnd > now) return setTimeout(function () { asyncCheckIfExists(selector, resolve) }, 1000)
+                        resolve(!!container);
+                    }
+
+                    asyncCheckIfExists(selector, function (exists) {
+                        if (!exists) return loadFinvizBanners(true);
+
+                        asyncCheckIfExists(selectorFrame, function (hasIframe) {
+                            if (!hasIframe) return loadFinvizBanners(true);
+                        })
+                    })
+                }
+
+                if (document.cookie.indexOf(cookieName) >= 0) {
+                    loadFinvizBanners(false);
+                } else {
+                    var s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.onerror = loadFinvizBanners;
+                    s.src = 'https://u5.investingchannel.com/static/uat.js';
+                    document.head.appendChild(s);
+
+                    InvestingChannelQueue = window.InvestingChannelQueue || [];
+                    var ic_page;
+
+                    function refreshAd(container, refreshes) {
+                        var placementTag, adslot;
+                        window.InvestingChannelQueue.push(function () {
+                            var pubTags = ic_page.getPubTag.call(ic_page, container.id);
+                            if (!pubTags) return;
+                            var pubTag = pubTags[0];
+                            placementTag = pubTag.mPlacements[0].mTagToRender;
+                            adslot = pubTag.mPlacements[0].mPublisherKval.adslot[0];
+                            // Update div ID
+                            var id = container.id.split('_');
+                            var numberOfDivs = document.querySelectorAll('[id*=' + id.slice(0, id.length - 1).join('_') + ']').length;
+                            var newDivNumber = Number(id.pop()) + numberOfDivs * refreshes;
+                            container.setAttribute('id', id.join('_') + '_' + newDivNumber);
+                            // Destroy previous pubtag & reset container html (loading span)
+                            pubTag.destroy();
+                            container.innerHTML = '';
+                        });
+                        window.InvestingChannelQueue.push(function () {
+                            if (!placementTag || !adslot) return
+                            // Create new pub tag
+                            var newTag;
+                            var layoutId = placementTag.mNativeLayout ? placementTag.mNativeLayout.nativelayoutid : null;
+                            if (layoutId) {
+                                newTag = ic_page.defineNativeTag('finviz/' + placementTag.mTarget.dfpkeyname, placementTag.mAdSize, container.id, layoutId);
+                                var nativeLayout, layoutData
+
+                                try {
+                                  nativeLayout = newTag.mPlacements[0].mTags[0].mNativeLayout;
+                                } catch (e) {
+                                    console.log(e.message)
+                                }
+
+                                try {
+                                  layoutData = newTag.mTemplate.mNativeLayout[layoutId].Data
+                                  if (layoutData && nativeLayout && !nativeLayout.layout) {
+                                    newTag.mPlacements[0].mTags[0].mNativeLayout = layoutData
+                                  }
+                                } catch (e) {
+                                    console.log(e.message)
+                                }
+                            } else {
+                                newTag = ic_page.defineTag('finviz/' + placementTag.mTarget.dfpkeyname, placementTag.mAdSize, container.id);
+                            }
+                            // Set adslot param
+                            newTag.setKval({ adslot: adslot });
+                            newTag.setKval({ kw: 'ajax' });
+                            newTag.render();
+                        });
+                    }
+
+                    var refreshCount = 1;
+                    function refreshAds(selectors) {
+                        if (window.ic_page) {
+                            document.querySelectorAll(selectors).forEach(function (element) {
+                                try {
+                                    refreshAd(element, refreshCount);
+                                } catch (e) {
+                                    console.log('Ad refresh error for:', element, e);
+                                }
+                            });
+                            window.ic_page.loadMore();
+                            refreshCount++;
+                        }
+                    }
+
+
+                    InvestingChannelQueue.push(function() {
+                        var icConfig = window['FINVIZ_IC_UAT_CONFIG'] = {};
+                        
+                        ic_page = InvestingChannel.UAT.Run('df0d0d52-cc7f-11e8-82a5-0abbb61c4a6a', icConfig);
+                    });
+
+                    var hash = null;
+                    if (typeof hash === 'string') {
+                      InvestingChannelQueue.push(function() {
+                          if (ic_page) {
+                              ic_page.setUserId('email', hash, true);
+                          }
+                      });
+                    }
+                }
+            </script>
+            <script>
+                (function () {
+                    var detectionEl = document.createElement('div');
+                    detectionEl.style.position='absolute';
+                    detectionEl.style.overflow='scroll';
+                    document.body.appendChild(detectionEl);
+                    document.documentElement.style.setProperty('--fv-scrollbar-width', `${detectionEl.offsetWidth}px`);
+                    document.body.removeChild(detectionEl);
+                })()
+            </script>
+        <div id="notifications-container"></div><table class="header">
+    <tr class="align-top">
+        <td>
+            <table class="header-container">
+                <tr>
+                    <td class="w-[30%]">
+                        <table class="w-full">
+                            <tr>
+                                <td class="h-[50px] align-middle">
+                                    <a href="/" class="logo"><svg width="225" height="32" class="block">
+  <use href="/img/logo.svg#free" class="dark:hidden" />
+  <use href="/img/logo.svg#free-dark" class="hidden dark:block" />
+</svg></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="search" style="padding-top: 7px">
+                                    <div class="navbar-search-placeholder">
+    <span class="icon-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24">
+            <path d="M16.9 15.5l4 4c.2.2.1.5 0 .7l-.7.7a.5.5 0 01-.8 0l-4-4c0-.2-.2-.3-.3-.4l-.7-1a7 7 0 01-11.2-4 7 7 0 1112.2 3l1 .6.5.4zM5 10a5 5 0 1010 0 5 5 0 00-10 0z" />
+        </svg>
+    </span>
+    <input placeholder="Search ticker, company or profile" class="search-input is-free"/>
+</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="align-bottom pb-1">
+                        <div id="microbar_position" class="hidden xl:flex items-center h-[37px] pl-2"><div>
+                        <div id="IC_D_88x31_1"class="relative overflow-hidden flex items-center justify-center w-full mx-auto" style="width:88px;height:31px;max-height:31px"></div>
+                        </div></div>
+                    </td>
+                    <td class="relative w-[730px] text-right">
+                        <div id="banner_position" class="overflow-hidden absolute top-0 right-0 w-full h-[96px]">
+                        <div id="IC_D_728x90_1"class="relative overflow-hidden flex items-center justify-center w-full mx-auto" style="width:728px;height:90px;max-height:90px"></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="w-[994px] leading-none" style="font-size:0">
+            <img src="/gfx/nic2x2.gif" class="w-[994px] h-px" alt="">
+        </td>
+    </tr>
+</table>
+            <table class="navbar">
+                <tr>
+                    <td class="h-[30px]">
+                        <table class="header-container">
+                            <tr><td><a class="nav-link is-first" href="/">Home</a></td><td><a class="nav-link" href="/news.ashx">News</a></td><td><a class="nav-link is-active" href="/screener.ashx">Screener</a></td><td><a class="nav-link" href="/map.ashx">Maps</a></td><td><a class="nav-link" href="/groups.ashx">Groups</a></td><td><a class="nav-link" href="/portfolio.ashx">Portfolio</a></td><td><a class="nav-link" href="/insidertrading.ashx">Insider</a></td><td><a class="nav-link" href="/futures.ashx">Futures</a></td><td><a class="nav-link" href="/forex.ashx">Forex</a></td><td><a class="nav-link" href="/crypto.ashx">Crypto</a></td><td><a class="nav-link" href="/elite?utm_source=finviz&utm_medium=banner&utm_campaign=main-navbar-backtests">Backtests</a></td><td><a class="nav-link is-elite" href="/elite">Pricing</a></td><td class="w-full relative"><div class="absolute bottom-0 left-0 right-0 top-0"><div id="time" class="pr-1"></div></div></td>
+                    <td class="nav relative">
+        <a data-testid="chart-layout-theme" href="#" class="!flex !bg-transparent !border-b-0 mt-1 !py-0 !px-1" style='border-left: 1px solid #444a57' title="Toggle Light/Dark mode" onclick="setChartThemeCookie('light', true)">
+            <div class='relative box-content flex rounded-full w-10 h-5 border border-gray-750 bg-gray-800 text-white justify-end'>
+                <div class='box-border w-1/2 rounded-full p-px border border-gray-800 bg-[#4c5261] flex justify-center items-center'>
+                    <svg width="16" height="16" class="fill-current text-white inline-block -ml-px">
+    <use href="/assets/dist-icons/icons.svg?rev=25#moonOutlined"/>
+</svg>
+                </div>
+            </div>
+            <span class='ml-1 select-none font-medium text-xs text-white'>Theme</span>
+        </a>
+    </td>
+    
+                <td>
+                    <a href="/help/screener.ashx" class="nav-link is-help border-l border-[#444a57]"><span class="fa fa-question-circle"></span>Help</a>
+                </td>
+                <td><a href="/login.ashx" class="nav-link sign-in">Login</a></td>
+                <td><a href="/register.ashx" class="nav-link sign-up">Register</a></td>
+            
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        
+          <script>
+            function reloadPage () { location.reload() }
+            function setChartThemeCookie(chartsTheme) {
+              fetch('/api/set_cookie.ashx?cookie=chartsTheme&value=' + chartsTheme ).catch(function(){}).then(function(){
+                window.gtag && window.gtag('event', 'click', { event_category: 'theme', event_label: 'toggle', value: chartsTheme, event_callback: reloadPage });
+                setTimeout(reloadPage,1000);
+              })
+            }
+          </script><div class="content "><table cellpadding="0" class="fv-container is-tight"><tr>
+<td>
+<div id="screener-react"></div>
+<table id="filter-table-top" class="screener-groups_table-filter filter-table-filters" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td><img class="w-1.5 h-1.5" src="gfx/nic2x2.gif" alt="" border="0"></td>
+<td align="center" width="15%">
+<select id="screenerPresetsSelect" style="width:100%;" class="fv-select body-combo-text" onchange='ScreenerPresetsChange(value,"v=111&f=sh_float_u10")'>
+<option>My Presets</option>
+<option value="__save_screen">-Save Screen</option>
+<option value="__edit_screens">-Edit Screens</option>
+</select>
+</td>
+<td class="screener-groups_filter-label text-right" width="6%">
+<span class="body-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Order by] body=[<table width=300><tr><td class='tooltip_tab'>Select the criteria by which the output information will be sorted. The order settings apply to all views. Use the <b>ascending</b> and <b>descending</b> option to invert the current order.<br><br> TIP: In table views you can click on top of a column to sort the table by the underlying values.</td></tr></table>] delay=[500]">Order by</span></td>
+<td align="left" width="20%" class="pl-1">
+<select id="orderSelect" style="width:100%;" class="body-combo-text fv-select" onchange='window.location=document.getElementById("orderSelect").value'>
+<option value="screener.ashx?v=111&f=sh_float_u10&o=ticker">Ticker</option><option value="screener.ashx?v=111&f=sh_float_u10&o=tickersfilter">Tickers Input Filter</option><option value="screener.ashx?v=111&f=sh_float_u10&o=company">Company</option><option value="screener.ashx?v=111&f=sh_float_u10&o=sector">Sector</option><option value="screener.ashx?v=111&f=sh_float_u10&o=industry">Industry</option><option value="screener.ashx?v=111&f=sh_float_u10&o=country">Country</option><option value="screener.ashx?v=111&f=sh_float_u10&o=index">Index</option><option value="screener.ashx?v=111&f=sh_float_u10&o=exchange">Exchange</option><option value="screener.ashx?v=111&f=sh_float_u10&o=marketcap">Market Cap.</option><option value="screener.ashx?v=111&f=sh_float_u10&o=pe">Price/Earnings</option><option value="screener.ashx?v=111&f=sh_float_u10&o=forwardpe">Forward Price/Earnings</option><option value="screener.ashx?v=111&f=sh_float_u10&o=peg">PEG (Price/Earnings/Growth)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=ps">Price/Sales</option><option value="screener.ashx?v=111&f=sh_float_u10&o=pb">Price/Book</option><option value="screener.ashx?v=111&f=sh_float_u10&o=pc">Price/Cash</option><option value="screener.ashx?v=111&f=sh_float_u10&o=pfcf">Price/Free Cash Flow</option><option value="screener.ashx?v=111&f=sh_float_u10&o=dividendyield">Dividend Yield</option><option value="screener.ashx?v=111&f=sh_float_u10&o=payoutratio">Payout Ratio</option><option value="screener.ashx?v=111&f=sh_float_u10&o=eps">EPS (ttm)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=estq1">EPS Estimate Next Quarter</option><option value="screener.ashx?v=111&f=sh_float_u10&o=epsyoy">EPS Growth This Year</option><option value="screener.ashx?v=111&f=sh_float_u10&o=epsyoy1">EPS Growth Next Year</option><option value="screener.ashx?v=111&f=sh_float_u10&o=eps3years">EPS Growth Past 3 Years</option><option value="screener.ashx?v=111&f=sh_float_u10&o=eps5years">EPS Growth Past 5 Years</option><option value="screener.ashx?v=111&f=sh_float_u10&o=estltgrowth">EPS Growth Next 5 Years</option><option value="screener.ashx?v=111&f=sh_float_u10&o=epsqoq">EPS Growth Qtr Over Qtr</option><option value="screener.ashx?v=111&f=sh_float_u10&o=epsyoyttm">EPS Year Over Year TTM</option><option value="screener.ashx?v=111&f=sh_float_u10&o=sales3years">Sales Growth Past 3 Years</option><option value="screener.ashx?v=111&f=sh_float_u10&o=sales5years">Sales Growth Past 5 Years</option><option value="screener.ashx?v=111&f=sh_float_u10&o=salesqoq">Sales Growth Qtr Over Qtr</option><option value="screener.ashx?v=111&f=sh_float_u10&o=salesyoyttm">Sales Year Over Year TTM</option><option value="screener.ashx?v=111&f=sh_float_u10&o=epssurprise">EPS Surprise</option><option value="screener.ashx?v=111&f=sh_float_u10&o=revenuesurprise">Revenue Surprise</option><option value="screener.ashx?v=111&f=sh_float_u10&o=sharesoutstanding2">Shares Outstanding</option><option value="screener.ashx?v=111&f=sh_float_u10&o=sharesfloat">Shares Float</option><option value="screener.ashx?v=111&f=sh_float_u10&o=floatoutstandingpct">Float/Outstanding</option><option value="screener.ashx?v=111&f=sh_float_u10&o=insiderown">Insider Ownership</option><option value="screener.ashx?v=111&f=sh_float_u10&o=insidertrans">Insider Transactions</option><option value="screener.ashx?v=111&f=sh_float_u10&o=instown">Institutional Ownership</option><option value="screener.ashx?v=111&f=sh_float_u10&o=insttrans">Institutional Transactions</option><option value="screener.ashx?v=111&f=sh_float_u10&o=shortinterestshare">Short Interest Share</option><option value="screener.ashx?v=111&f=sh_float_u10&o=shortinterestratio">Short Interest Ratio</option><option value="screener.ashx?v=111&f=sh_float_u10&o=shortinterest">Short Interest</option><option value="screener.ashx?v=111&f=sh_float_u10&o=earningsdate">Earnings Date</option><option value="screener.ashx?v=111&f=sh_float_u10&o=news_date">Latest News</option><option value="screener.ashx?v=111&f=sh_float_u10&o=roa">Return on Assets</option><option value="screener.ashx?v=111&f=sh_float_u10&o=roe">Return on Equity</option><option value="screener.ashx?v=111&f=sh_float_u10&o=roi">Return on Invested Capital</option><option value="screener.ashx?v=111&f=sh_float_u10&o=curratio">Current Ratio</option><option value="screener.ashx?v=111&f=sh_float_u10&o=quickratio">Quick Ratio</option><option value="screener.ashx?v=111&f=sh_float_u10&o=ltdebteq">LT Debt/Equity</option><option value="screener.ashx?v=111&f=sh_float_u10&o=debteq">Total Debt/Equity</option><option value="screener.ashx?v=111&f=sh_float_u10&o=grossmargin">Gross Margin</option><option value="screener.ashx?v=111&f=sh_float_u10&o=opermargin">Operating Margin</option><option value="screener.ashx?v=111&f=sh_float_u10&o=netmargin">Net Profit Margin</option><option value="screener.ashx?v=111&f=sh_float_u10&o=recom">Analyst Recommendation</option><option value="screener.ashx?v=111&f=sh_float_u10&o=perf1w">Performance (Week)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=perf4w">Performance (Month)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=perf13w">Performance (Quarter)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=perf26w">Performance (Half Year)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=perfytd">Performance (Year To Date)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=perf52w">Performance (Year)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=perf3y">Performance (3 Years)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=perf5y">Performance (5 Years)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=perf10y">Performance (10 Years)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=beta">Beta</option><option value="screener.ashx?v=111&f=sh_float_u10&o=averagetruerange">Average True Range</option><option value="screener.ashx?v=111&f=sh_float_u10&o=volatility1w">Volatility (Week)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=volatility4w">Volatility (Month)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=sma20">20-Day SMA (Relative)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=sma50">50-Day SMA (Relative)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=sma200">200-Day SMA (Relative)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=high50d">50-Day High (Relative)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=low50d">50-Day Low (Relative)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=high52w">52-Week High (Relative)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=low52w">52-Week Low (Relative)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=52wrange">52-Week Range</option><option value="screener.ashx?v=111&f=sh_float_u10&o=highat">All-Time High (Relative)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=lowat">All-Time Low (Relative)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=rsi">Relative Strength Index (14)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=averagevolume">Average Volume (3 Month)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=relativevolume">Relative Volume</option><option value="screener.ashx?v=111&f=sh_float_u10&o=change">Change</option><option value="screener.ashx?v=111&f=sh_float_u10&o=changeopen">Change from Open</option><option value="screener.ashx?v=111&f=sh_float_u10&o=gap">Gap</option><option value="screener.ashx?v=111&f=sh_float_u10&o=volume">Volume</option><option value="screener.ashx?v=111&f=sh_float_u10&o=open">Open</option><option value="screener.ashx?v=111&f=sh_float_u10&o=high">High</option><option value="screener.ashx?v=111&f=sh_float_u10&o=low">Low</option><option value="screener.ashx?v=111&f=sh_float_u10&o=price">Price</option><option value="screener.ashx?v=111&f=sh_float_u10&o=prevclose">Previous Close</option><option value="screener.ashx?v=111&f=sh_float_u10&o=targetprice">Target Price</option><option value="screener.ashx?v=111&f=sh_float_u10&o=ipodate">IPO Date</option><option value="screener.ashx?v=111&f=sh_float_u10&o=book">Book Value per Share</option><option value="screener.ashx?v=111&f=sh_float_u10&o=cashpershare">Cash per Share</option><option value="screener.ashx?v=111&f=sh_float_u10&o=dividend">Dividend</option><option value="screener.ashx?v=111&f=sh_float_u10&o=dividendexdate">Dividend Ex-Date</option><option value="screener.ashx?v=111&f=sh_float_u10&o=dividendttm">Dividend TTM</option><option value="screener.ashx?v=111&f=sh_float_u10&o=dividend1y">Dividend Growth (1 Year)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=dividend3y">Dividend Growth (3 Year)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=dividend5y">Dividend Growth (5 Year)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=employees">Employees</option><option value="screener.ashx?v=111&f=sh_float_u10&o=income">Income</option><option value="screener.ashx?v=111&f=sh_float_u10&o=sales">Sales</option><option value="screener.ashx?v=111&f=sh_float_u10&o=enterpriseValue">Enterprise Value</option><option value="screener.ashx?v=111&f=sh_float_u10&o=evebitda">EV/EBITDA</option><option value="screener.ashx?v=111&f=sh_float_u10&o=evsales">EV/Sales</option><option value="screener.ashx?v=111&f=sh_float_u10&o=optionable">Optionable</option><option value="screener.ashx?v=111&f=sh_float_u10&o=shortable">Shortable</option><option value="screener.ashx?v=111&f=sh_float_u10&o=newsurl">News URL</option><option value="screener.ashx?v=111&f=sh_float_u10&o=newstitle">News Title</option><option value="screener.ashx?v=111&f=sh_float_u10&o=newstime">News Time</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.category">ETF - Single Category</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.tags">ETF - Tags</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.totalholdings">ETF - Total Holdings</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.assetsundermanagement">ETF - Assets Under Management</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.netflows1month">ETF - Net Fund Flows (1 Month)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.netflows1monthpct">ETF - Net Fund Flows% (1 Month)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.netflows3month">ETF - Net Fund Flows (3 Month)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.netflows3monthpct">ETF - Net Fund Flows% (3 Month)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.netflowsytd">ETF - Net Fund Flows (YTD)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.netflowsytdpct">ETF - Net Fund Flows% (YTD)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.return1year">ETF - Annualized Return (1 Year)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.return3year">ETF - Annualized Return (3 Year)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.return5year">ETF - Annualized Return (5 Year)</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.netexpenseratio">ETF - Net Expense Ratio</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.activepassive">ETF - Active Passive</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.assettype">ETF - Asset Type</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.etftype">ETF - Type</option><option value="screener.ashx?v=111&f=sh_float_u10&o=e.sectortheme">ETF - Sector/Theme</option></select>
+</td>
+<td align="left" width="6%" class="pl-1">
+<select id="orderDirSelect" style="width: 100%;" class="body-combo-text fv-select" onchange='window.location=document.getElementById("orderDirSelect").value'>
+<option selected="selected" value="screener.ashx?v=111&f=sh_float_u10">Asc</option><option value="screener.ashx?v=111&f=sh_float_u10&o=-">Desc</option></select>
+</td>
+<td class="screener-groups_filter-label text-right" width="6%">
+<span class="body-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Signal] body=[<table width=300><tr><td class='tooltip_tab'>You can screen the stocks by signal - an event, by which traders usually enter or exit positions.</td></tr></table>] delay=[500]">Signal</span></td>
+<td align="left" width="15%" class="pl-1">
+<select id="signalSelect" style="width: 100%;"  class="fv-select body-combo-text" onchange='window.location=document.getElementById("signalSelect").value'>
+<option selected="selected" value="screener.ashx?v=111&f=sh_float_u10">None (all stocks)</option><option value="screener.ashx?v=111&s=ta_topgainers&f=sh_float_u10">Top Gainers</option><option value="screener.ashx?v=111&s=ta_toplosers&f=sh_float_u10">Top Losers</option><option value="screener.ashx?v=111&s=ta_newhigh&f=sh_float_u10">New High</option><option value="screener.ashx?v=111&s=ta_newlow&f=sh_float_u10">New Low</option><option value="screener.ashx?v=111&s=ta_mostvolatile&f=sh_float_u10">Most Volatile</option><option value="screener.ashx?v=111&s=ta_mostactive&f=sh_float_u10">Most Active</option><option value="screener.ashx?v=111&s=ta_unusualvolume&f=sh_float_u10">Unusual Volume</option><option value="screener.ashx?v=111&s=ta_overbought&f=sh_float_u10">Overbought</option><option value="screener.ashx?v=111&s=ta_oversold&f=sh_float_u10">Oversold</option><option value="screener.ashx?v=111&s=n_downgrades&f=sh_float_u10">Downgrades</option><option value="screener.ashx?v=111&s=n_upgrades&f=sh_float_u10">Upgrades</option><option value="screener.ashx?v=111&s=n_earningsbefore&f=sh_float_u10">Earnings Before</option><option value="screener.ashx?v=111&s=n_earningsafter&f=sh_float_u10">Earnings After</option><option value="screener.ashx?v=111&s=it_latestbuys&f=sh_float_u10">Recent Insider Buying</option><option value="screener.ashx?v=111&s=it_latestsales&f=sh_float_u10">Recent Insider Selling</option><option value="screener.ashx?v=111&s=n_majornews&f=sh_float_u10">Major News</option><option value="screener.ashx?v=111&s=ta_p_horizontal&f=sh_float_u10">Horizontal S/R</option><option value="screener.ashx?v=111&s=ta_p_tlresistance&f=sh_float_u10">TL Resistance</option><option value="screener.ashx?v=111&s=ta_p_tlsupport&f=sh_float_u10">TL Support</option><option value="screener.ashx?v=111&s=ta_p_wedgeup&f=sh_float_u10">Wedge Up</option><option value="screener.ashx?v=111&s=ta_p_wedgedown&f=sh_float_u10">Wedge Down</option><option value="screener.ashx?v=111&s=ta_p_wedgeresistance&f=sh_float_u10">Triangle Ascending</option><option value="screener.ashx?v=111&s=ta_p_wedgesupport&f=sh_float_u10">Triangle Descending</option><option value="screener.ashx?v=111&s=ta_p_wedge&f=sh_float_u10">Wedge</option><option value="screener.ashx?v=111&s=ta_p_channelup&f=sh_float_u10">Channel Up</option><option value="screener.ashx?v=111&s=ta_p_channeldown&f=sh_float_u10">Channel Down</option><option value="screener.ashx?v=111&s=ta_p_channel&f=sh_float_u10">Channel</option><option value="screener.ashx?v=111&s=ta_p_doubletop&f=sh_float_u10">Double Top</option><option value="screener.ashx?v=111&s=ta_p_doublebottom&f=sh_float_u10">Double Bottom</option><option value="screener.ashx?v=111&s=ta_p_multipletop&f=sh_float_u10">Multiple Top</option><option value="screener.ashx?v=111&s=ta_p_multiplebottom&f=sh_float_u10">Multiple Bottom</option><option value="screener.ashx?v=111&s=ta_p_headandshoulders&f=sh_float_u10">Head & Shoulders</option><option value="screener.ashx?v=111&s=ta_p_headandshouldersinv&f=sh_float_u10">Head & Shoulders Inverse</option></select>
+</td>
+<td class="screener-groups_filter-label text-right" width="6%">
+<span class="body-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Tickers] body=[<table width=300><tr><td class='tooltip_tab'>To screen through a selected set of stocks, you can enter one or more tickers directly, such as 'MSFT,GOOG,AAPL'. The screening process will run only on the specified stocks. No input ticker(s) equals all stocks. The <b>open in screener</b> option in the <b>Search</b>, will copy the listed tickers to the screener's ticker box automatically.</td></tr></table>] offsetx=[-100] delay=[500]">Tickers</span></td>
+<td align="left" width="24%"  class="pl-1">
+<table width="100%" cellpadding="0" cellspacing="0" style="table-layout:fixed;">
+<tr>
+<td align="left" width="100%">
+<input id="tickersInput" class="fv-input body-combo-text" style="width:100%" value="" type="text" onkeypress="if(event.keyCode==13){window.location='screener.ashx?v=111&f=sh_float_u10&t=' + window.FLibs.getSanitizedTicker(document.getElementById('tickersInput').value, true)}">
+</td>
+</tr>
+</table>
+</td>
+<td class="pl-1">
+<button data-boxover="Submit tickers" class="screener-combo-button fv-button screener_button is-arrow" style="cursor:pointer" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&t=' +tickersInput.value"/>
+    <svg width="16" height="16" class="-mx-1">
+    <use href="/assets/dist-icons/icons.svg?rev=25#chevronRight"/>
+</svg>
+</button></td>
+<td align="left" valign="center" class="pl-2"><a href="screener.ashx?v=110&f=sh_float_u10" class="screener-combo-button fv-button is-small is-border screener_button is-active is-open" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Filters] body=[<table width=300><tr><td class='tooltip_tab'>To optimize the screening by various stock-related criteria, you can use one or more <b>Filters</b>.</td></tr></table>] offsetx=[-305] delay=[500]">Filters <svg width="16" height="16" class="ml-1 -mr-px">
+    <use href="/assets/dist-icons/icons.svg?rev=25#caretDown"/>
+</svg></a></td>
+<td width="1%"></td></tr>
+</table>
+</td>
+</tr>
+<tr><td colspan="30">
+<div class="screener_filter-tabs-section">
+    <div class="flex w-full items-center">
+        <div class="w-1.5 screener_filter-tabs-filler"></div>
+<button class="screener-combo-button fv-button is-small" onclick="window.location='screener.ashx?v=111'">Reset Filters</button>
+        
+        <div class="flex-1 screener_filter-tabs-filler"></div>
+    </div>
+    <div class="screener_filter-tabs-wrapper"><div class="screener-tabs screener_filter-tab has-badge is-selected" onclick="window.location='screener.ashx?v=111&f=sh_float_u10'">Descriptive<span class="badge is-small ml-1.5 is-selected">1</span></div>
+<div class="screener-tabs screener_filter-tab has-badge is-gray" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&ft=2'">Fundamental</div>
+<div class="screener-tabs screener_filter-tab has-badge is-gray" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&ft=3'">Technical</div>
+<div class="screener-tabs screener_filter-tab has-badge is-gray" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&ft=6'">News</div>
+<div class="screener-tabs screener_filter-tab has-badge is-gray" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&ft=5'">ETF</div>
+<div class="screener-tabs screener_filter-tab has-badge is-yellow" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&ft=4'">All<span class="badge is-small ml-1.5">1</span></div>
+    </div>
+    <div class="w-full screener_filter-tabs-filler"></div>
+</div></td>
+</tr>
+<tr>
+<td colspan="30" valign="middle" align="center" class="filters-border filter-table-filters">
+<div class="screener-groups_settings-table-wrapper">
+<form autocomplete="off">
+<table id="filter-table-filters" class="screener-groups_settings-table is-dimmer-text" width="100%" cellpadding="1" cellspacing="1" style="table-layout:fixed;">
+<tr>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Exchange] body=[<table width=300><tr><td class='tooltip_tab'>Stock Exchange at which a stock is listed.</td></tr></table>] delay=[500]">Exchange</span></td>
+<td width="10%" class="filters-cells relative">
+
+                <div id="fsm_exch" class="js-custom-modal" style="display: none">
+                    <table class="screener_custom-input-table is-modal" style="border-collapse: collapse; table-layout: fixed;" cellpadding="0">
+                        <tr>
+                            <td style="position: relative">
+                                <input id="fsmi_exch" class="js-custom-modal-edit screener-input-text h fv-input is-highlight w-full cursor-pointer pr-5 font-medium" data-filter="exch" type="text" value="" readonly>
+                                <a href="#" class="edit-custom-modal-button fv-button js-custom-modal-edit screener_custom-add-button" data-filter="exch">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#add"/>
+</svg>
+                                </a>
+                            </td>
+                            <td width="13">
+                                <a href="#" class="js-custom-modal-hide screener-input-hide screener_custom-clear-button fv-button" data-filter="exch">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#clear"/>
+</svg>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div><select id="fs_exch" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="exch" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=exch_selected_filter,sh_float_u10" data-selected="">
+<option selected="selected" value="">Any</option><option value="amex">AMEX</option><option value="cboe">CBOE</option><option value="nasd">NASDAQ</option><option value="nyse">NYSE</option><option value="modal">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Index] body=[<table width=300><tr><td class='tooltip_tab'>A major index membership of a stock.</td></tr></table>] delay=[500]">Index</span></td>
+<td width="10%" class="filters-cells relative">
+
+                <div id="fsm_idx" class="js-custom-modal" style="display: none">
+                    <table class="screener_custom-input-table is-modal" style="border-collapse: collapse; table-layout: fixed;" cellpadding="0">
+                        <tr>
+                            <td style="position: relative">
+                                <input id="fsmi_idx" class="js-custom-modal-edit screener-input-text h fv-input is-highlight w-full cursor-pointer pr-5 font-medium" data-filter="idx" type="text" value="" readonly>
+                                <a href="#" class="edit-custom-modal-button fv-button js-custom-modal-edit screener_custom-add-button" data-filter="idx">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#add"/>
+</svg>
+                                </a>
+                            </td>
+                            <td width="13">
+                                <a href="#" class="js-custom-modal-hide screener-input-hide screener_custom-clear-button fv-button" data-filter="idx">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#clear"/>
+</svg>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div><select id="fs_idx" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="idx" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=idx_selected_filter,sh_float_u10" data-selected="">
+<option selected="selected" value="">Any</option><option value="sp500">S&amp;P 500</option><option value="ndx">NASDAQ 100</option><option value="dji">DJIA</option><option value="rut">RUSSELL 2000</option><option value="modal">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Sector] body=[<table width=300><tr><td class='tooltip_tab'>The sector which a stock belongs to.</td></tr></table>] delay=[500]">Sector</span></td>
+<td width="10%" class="filters-cells relative">
+
+                <div id="fsm_sec" class="js-custom-modal" style="display: none">
+                    <table class="screener_custom-input-table is-modal" style="border-collapse: collapse; table-layout: fixed;" cellpadding="0">
+                        <tr>
+                            <td style="position: relative">
+                                <input id="fsmi_sec" class="js-custom-modal-edit screener-input-text h fv-input is-highlight w-full cursor-pointer pr-5 font-medium" data-filter="sec" type="text" value="" readonly>
+                                <a href="#" class="edit-custom-modal-button fv-button js-custom-modal-edit screener_custom-add-button" data-filter="sec">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#add"/>
+</svg>
+                                </a>
+                            </td>
+                            <td width="13">
+                                <a href="#" class="js-custom-modal-hide screener-input-hide screener_custom-clear-button fv-button" data-filter="sec">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#clear"/>
+</svg>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div><select id="fs_sec" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="sec" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=sec_selected_filter,sh_float_u10" data-selected="">
+<option selected="selected" value="">Any</option><option value="basicmaterials">Basic Materials</option><option value="communicationservices">Communication Services</option><option value="consumercyclical">Consumer Cyclical</option><option value="consumerdefensive">Consumer Defensive</option><option value="energy">Energy</option><option value="financial">Financial</option><option value="healthcare">Healthcare</option><option value="industrials">Industrials</option><option value="realestate">Real Estate</option><option value="technology">Technology</option><option value="utilities">Utilities</option><option value="modal">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Industry] body=[<table width=300><tr><td class='tooltip_tab'>The industry which a stock belongs to.</td></tr></table>] delay=[500]">Industry</span></td>
+<td width="10%" class="filters-cells relative">
+
+                <div id="fsm_ind" class="js-custom-modal" style="display: none">
+                    <table class="screener_custom-input-table is-modal" style="border-collapse: collapse; table-layout: fixed;" cellpadding="0">
+                        <tr>
+                            <td style="position: relative">
+                                <input id="fsmi_ind" class="js-custom-modal-edit screener-input-text h fv-input is-highlight w-full cursor-pointer pr-5 font-medium" data-filter="ind" type="text" value="" readonly>
+                                <a href="#" class="edit-custom-modal-button fv-button js-custom-modal-edit screener_custom-add-button" data-filter="ind">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#add"/>
+</svg>
+                                </a>
+                            </td>
+                            <td width="13">
+                                <a href="#" class="js-custom-modal-hide screener-input-hide screener_custom-clear-button fv-button" data-filter="ind">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#clear"/>
+</svg>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div><select id="fs_ind" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="ind" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=ind_selected_filter,sh_float_u10" data-selected="">
+<option selected="selected" value="">Any</option><option value="stocksonly">Stocks only (ex-Funds)</option><option value="exchangetradedfund">Exchange Traded Fund</option><option value="advertisingagencies">Advertising Agencies</option><option value="aerospacedefense">Aerospace &amp; Defense</option><option value="agriculturalinputs">Agricultural Inputs</option><option value="airlines">Airlines</option><option value="airportsairservices">Airports &amp; Air Services</option><option value="aluminum">Aluminum</option><option value="apparelmanufacturing">Apparel Manufacturing</option><option value="apparelretail">Apparel Retail</option><option value="assetmanagement">Asset Management</option><option value="automanufacturers">Auto Manufacturers</option><option value="autoparts">Auto Parts</option><option value="autotruckdealerships">Auto &amp; Truck Dealerships</option><option value="banksdiversified">Banks - Diversified</option><option value="banksregional">Banks - Regional</option><option value="beveragesbrewers">Beverages - Brewers</option><option value="beveragesnonalcoholic">Beverages - Non-Alcoholic</option><option value="beverageswineriesdistilleries">Beverages - Wineries &amp; Distilleries</option><option value="biotechnology">Biotechnology</option><option value="broadcasting">Broadcasting</option><option value="buildingmaterials">Building Materials</option><option value="buildingproductsequipment">Building Products &amp; Equipment</option><option value="businessequipmentsupplies">Business Equipment &amp; Supplies</option><option value="capitalmarkets">Capital Markets</option><option value="chemicals">Chemicals</option><option value="closedendfunddebt">Closed-End Fund - Debt</option><option value="closedendfundequity">Closed-End Fund - Equity</option><option value="closedendfundforeign">Closed-End Fund - Foreign</option><option value="cokingcoal">Coking Coal</option><option value="communicationequipment">Communication Equipment</option><option value="computerhardware">Computer Hardware</option><option value="confectioners">Confectioners</option><option value="conglomerates">Conglomerates</option><option value="consultingservices">Consulting Services</option><option value="consumerelectronics">Consumer Electronics</option><option value="copper">Copper</option><option value="creditservices">Credit Services</option><option value="departmentstores">Department Stores</option><option value="diagnosticsresearch">Diagnostics &amp; Research</option><option value="discountstores">Discount Stores</option><option value="drugmanufacturersgeneral">Drug Manufacturers - General</option><option value="drugmanufacturersspecialtygeneric">Drug Manufacturers - Specialty &amp; Generic</option><option value="educationtrainingservices">Education &amp; Training Services</option><option value="electricalequipmentparts">Electrical Equipment &amp; Parts</option><option value="electroniccomponents">Electronic Components</option><option value="electronicgamingmultimedia">Electronic Gaming &amp; Multimedia</option><option value="electronicscomputerdistribution">Electronics &amp; Computer Distribution</option><option value="engineeringconstruction">Engineering &amp; Construction</option><option value="entertainment">Entertainment</option><option value="exchangetradedfund">Exchange Traded Fund</option><option value="farmheavyconstructionmachinery">Farm &amp; Heavy Construction Machinery</option><option value="farmproducts">Farm Products</option><option value="financialconglomerates">Financial Conglomerates</option><option value="financialdatastockexchanges">Financial Data &amp; Stock Exchanges</option><option value="fooddistribution">Food Distribution</option><option value="footwearaccessories">Footwear &amp; Accessories</option><option value="furnishingsfixturesappliances">Furnishings, Fixtures &amp; Appliances</option><option value="gambling">Gambling</option><option value="gold">Gold</option><option value="grocerystores">Grocery Stores</option><option value="healthcareplans">Healthcare Plans</option><option value="healthinformationservices">Health Information Services</option><option value="homeimprovementretail">Home Improvement Retail</option><option value="householdpersonalproducts">Household &amp; Personal Products</option><option value="industrialdistribution">Industrial Distribution</option><option value="informationtechnologyservices">Information Technology Services</option><option value="infrastructureoperations">Infrastructure Operations</option><option value="insurancebrokers">Insurance Brokers</option><option value="insurancediversified">Insurance - Diversified</option><option value="insurancelife">Insurance - Life</option><option value="insurancepropertycasualty">Insurance - Property &amp; Casualty</option><option value="insurancereinsurance">Insurance - Reinsurance</option><option value="insurancespecialty">Insurance - Specialty</option><option value="integratedfreightlogistics">Integrated Freight &amp; Logistics</option><option value="internetcontentinformation">Internet Content &amp; Information</option><option value="internetretail">Internet Retail</option><option value="leisure">Leisure</option><option value="lodging">Lodging</option><option value="lumberwoodproduction">Lumber &amp; Wood Production</option><option value="luxurygoods">Luxury Goods</option><option value="marineshipping">Marine Shipping</option><option value="medicalcarefacilities">Medical Care Facilities</option><option value="medicaldevices">Medical Devices</option><option value="medicaldistribution">Medical Distribution</option><option value="medicalinstrumentssupplies">Medical Instruments &amp; Supplies</option><option value="metalfabrication">Metal Fabrication</option><option value="mortgagefinance">Mortgage Finance</option><option value="oilgasdrilling">Oil &amp; Gas Drilling</option><option value="oilgasep">Oil &amp; Gas E&amp;P</option><option value="oilgasequipmentservices">Oil &amp; Gas Equipment &amp; Services</option><option value="oilgasintegrated">Oil &amp; Gas Integrated</option><option value="oilgasmidstream">Oil &amp; Gas Midstream</option><option value="oilgasrefiningmarketing">Oil &amp; Gas Refining &amp; Marketing</option><option value="otherindustrialmetalsmining">Other Industrial Metals &amp; Mining</option><option value="otherpreciousmetalsmining">Other Precious Metals &amp; Mining</option><option value="packagedfoods">Packaged Foods</option><option value="packagingcontainers">Packaging &amp; Containers</option><option value="paperpaperproducts">Paper &amp; Paper Products</option><option value="personalservices">Personal Services</option><option value="pharmaceuticalretailers">Pharmaceutical Retailers</option><option value="pollutiontreatmentcontrols">Pollution &amp; Treatment Controls</option><option value="publishing">Publishing</option><option value="railroads">Railroads</option><option value="realestatedevelopment">Real Estate - Development</option><option value="realestatediversified">Real Estate - Diversified</option><option value="realestateservices">Real Estate Services</option><option value="recreationalvehicles">Recreational Vehicles</option><option value="reitdiversified">REIT - Diversified</option><option value="reithealthcarefacilities">REIT - Healthcare Facilities</option><option value="reithotelmotel">REIT - Hotel &amp; Motel</option><option value="reitindustrial">REIT - Industrial</option><option value="reitmortgage">REIT - Mortgage</option><option value="reitoffice">REIT - Office</option><option value="reitresidential">REIT - Residential</option><option value="reitretail">REIT - Retail</option><option value="reitspecialty">REIT - Specialty</option><option value="rentalleasingservices">Rental &amp; Leasing Services</option><option value="residentialconstruction">Residential Construction</option><option value="resortscasinos">Resorts &amp; Casinos</option><option value="restaurants">Restaurants</option><option value="scientifictechnicalinstruments">Scientific &amp; Technical Instruments</option><option value="securityprotectionservices">Security &amp; Protection Services</option><option value="semiconductorequipmentmaterials">Semiconductor Equipment &amp; Materials</option><option value="semiconductors">Semiconductors</option><option value="shellcompanies">Shell Companies</option><option value="silver">Silver</option><option value="softwareapplication">Software - Application</option><option value="softwareinfrastructure">Software - Infrastructure</option><option value="solar">Solar</option><option value="specialtybusinessservices">Specialty Business Services</option><option value="specialtychemicals">Specialty Chemicals</option><option value="specialtyindustrialmachinery">Specialty Industrial Machinery</option><option value="specialtyretail">Specialty Retail</option><option value="staffingemploymentservices">Staffing &amp; Employment Services</option><option value="steel">Steel</option><option value="telecomservices">Telecom Services</option><option value="textilemanufacturing">Textile Manufacturing</option><option value="thermalcoal">Thermal Coal</option><option value="tobacco">Tobacco</option><option value="toolsaccessories">Tools &amp; Accessories</option><option value="travelservices">Travel Services</option><option value="trucking">Trucking</option><option value="uranium">Uranium</option><option value="utilitiesdiversified">Utilities - Diversified</option><option value="utilitiesindependentpowerproducers">Utilities - Independent Power Producers</option><option value="utilitiesregulatedelectric">Utilities - Regulated Electric</option><option value="utilitiesregulatedgas">Utilities - Regulated Gas</option><option value="utilitiesregulatedwater">Utilities - Regulated Water</option><option value="utilitiesrenewable">Utilities - Renewable</option><option value="wastemanagement">Waste Management</option><option value="modal">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Country] body=[<table width=300><tr><td class='tooltip_tab'>The country where company of selected stock is based.</td></tr></table>] offsetx=[-305] delay=[500]">Country</span></td>
+<td width="10%" class="filters-cells relative">
+
+                <div id="fsm_geo" class="js-custom-modal" style="display: none">
+                    <table class="screener_custom-input-table is-modal" style="border-collapse: collapse; table-layout: fixed;" cellpadding="0">
+                        <tr>
+                            <td style="position: relative">
+                                <input id="fsmi_geo" class="js-custom-modal-edit screener-input-text h fv-input is-highlight w-full cursor-pointer pr-5 font-medium" data-filter="geo" type="text" value="" readonly>
+                                <a href="#" class="edit-custom-modal-button fv-button js-custom-modal-edit screener_custom-add-button" data-filter="geo">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#add"/>
+</svg>
+                                </a>
+                            </td>
+                            <td width="13">
+                                <a href="#" class="js-custom-modal-hide screener-input-hide screener_custom-clear-button fv-button" data-filter="geo">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#clear"/>
+</svg>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div><select id="fs_geo" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="geo" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=geo_selected_filter,sh_float_u10" data-selected="">
+<option selected="selected" value="">Any</option><option value="usa">USA</option><option value="notusa">Foreign (ex-USA)</option><option value="asia">Asia</option><option value="europe">Europe</option><option value="latinamerica">Latin America</option><option value="bric">BRIC</option><option value="argentina">Argentina</option><option value="australia">Australia</option><option value="bahamas">Bahamas</option><option value="belgium">Belgium</option><option value="benelux">BeNeLux</option><option value="bermuda">Bermuda</option><option value="brazil">Brazil</option><option value="canada">Canada</option><option value="caymanislands">Cayman Islands</option><option value="chile">Chile</option><option value="china">China</option><option value="chinahongkong">China &amp; Hong Kong</option><option value="colombia">Colombia</option><option value="cyprus">Cyprus</option><option value="denmark">Denmark</option><option value="finland">Finland</option><option value="france">France</option><option value="germany">Germany</option><option value="greece">Greece</option><option value="hongkong">Hong Kong</option><option value="hungary">Hungary</option><option value="iceland">Iceland</option><option value="india">India</option><option value="indonesia">Indonesia</option><option value="ireland">Ireland</option><option value="israel">Israel</option><option value="italy">Italy</option><option value="japan">Japan</option><option value="jordan">Jordan</option><option value="kazakhstan">Kazakhstan</option><option value="luxembourg">Luxembourg</option><option value="malaysia">Malaysia</option><option value="malta">Malta</option><option value="mexico">Mexico</option><option value="monaco">Monaco</option><option value="netherlands">Netherlands</option><option value="newzealand">New Zealand</option><option value="norway">Norway</option><option value="panama">Panama</option><option value="peru">Peru</option><option value="philippines">Philippines</option><option value="portugal">Portugal</option><option value="russia">Russia</option><option value="singapore">Singapore</option><option value="southafrica">South Africa</option><option value="southkorea">South Korea</option><option value="spain">Spain</option><option value="sweden">Sweden</option><option value="switzerland">Switzerland</option><option value="taiwan">Taiwan</option><option value="thailand">Thailand</option><option value="turkey">Turkey</option><option value="unitedarabemirates">United Arab Emirates</option><option value="unitedkingdom">United Kingdom</option><option value="uruguay">Uruguay</option><option value="vietnam">Vietnam</option><option value="modal">Custom (Elite only)</option></select>
+</td>
+</tr><tr>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Market Capitalization] body=[<table width=300><tr><td class='tooltip_tab'>Equals The total dollar market value of all of a company's outstanding shares.</td></tr></table>] delay=[500]">Market Cap.</span></td>
+<td width="10%" class="filters-cells relative">
+<select id="fs_cap" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="cap" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=cap_selected_filter,sh_float_u10" data-selected="">
+<option selected="selected" value="">Any</option><option value="mega">Mega ($200bln and more)</option><option value="large">Large ($10bln to $200bln)</option><option value="mid">Mid ($2bln to $10bln)</option><option value="small">Small ($300mln to $2bln)</option><option value="micro">Micro ($50mln to $300mln)</option><option value="nano">Nano (under $50mln)</option><option value="largeover">+Large (over $10bln)</option><option value="midover">+Mid (over $2bln)</option><option value="smallover">+Small (over $300mln)</option><option value="microover">+Micro (over $50mln)</option><option value="largeunder">-Large (under $200bln)</option><option value="midunder">-Mid (under $10bln)</option><option value="smallunder">-Small (under $2bln)</option><option value="microunder">-Micro (under $300mln)</option><option value="frange">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Dividend Yield (Fiscal Year Estimate)] body=[<table width=300><tr><td class='tooltip_tab'>The dividend yield equals the annual dividend per share divided by the stock’s price. This measurement tells what percentage return a company pays out to shareholders in the form of dividends.<br><br>If there is no forward dividend estimate available, trailing twelve month (TTM) value is used.<br></td></tr></table>] delay=[500]">Dividend Yield</span></td>
+<td width="10%" class="filters-cells relative">
+<select id="fs_fa_div" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="fa_div" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=fa_div_selected_filter,sh_float_u10" data-selected="">
+<option selected="selected" value="">Any</option><option value="none">None (0%)</option><option value="pos">Positive (>0%)</option><option value="high">High (>5%)</option><option value="veryhigh">Very High (>10%)</option><option value="o1">Over 1%</option><option value="o2">Over 2%</option><option value="o3">Over 3%</option><option value="o4">Over 4%</option><option value="o5">Over 5%</option><option value="o6">Over 6%</option><option value="o7">Over 7%</option><option value="o8">Over 8%</option><option value="o9">Over 9%</option><option value="o10">Over 10%</option><option value="frange">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Short Selling] body=[<table width=300><tr><td class='tooltip_tab'>The amount of short-selling transactions of given stock.</td></tr></table>] delay=[500]">Short Float</span></td>
+<td width="10%" class="filters-cells relative">
+<select id="fs_sh_short" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="sh_short" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=sh_float_u10,sh_short_selected_filter" data-selected="">
+<option selected="selected" value="">Any</option><option value="low">Low (<5%)</option><option value="high">High (>20%)</option><option value="u5">Under 5%</option><option value="u10">Under 10%</option><option value="u15">Under 15%</option><option value="u20">Under 20%</option><option value="u25">Under 25%</option><option value="u30">Under 30%</option><option value="o5">Over 5%</option><option value="o10">Over 10%</option><option value="o15">Over 15%</option><option value="o20">Over 20%</option><option value="o25">Over 25%</option><option value="o30">Over 30%</option><option value="frange">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Analyst Recommendation] body=[<table width=300><tr><td class='tooltip_tab'>An outlook of a stock-market analyst on a stock.</td></tr></table>] delay=[500]">Analyst Recom.</span></td>
+<td width="10%" class="filters-cells relative">
+
+                <div id="fsm_an_recom" class="js-custom-modal" style="display: none">
+                    <table class="screener_custom-input-table is-modal" style="border-collapse: collapse; table-layout: fixed;" cellpadding="0">
+                        <tr>
+                            <td style="position: relative">
+                                <input id="fsmi_an_recom" class="js-custom-modal-edit screener-input-text h fv-input is-highlight w-full cursor-pointer pr-5 font-medium" data-filter="an_recom" type="text" value="" readonly>
+                                <a href="#" class="edit-custom-modal-button fv-button js-custom-modal-edit screener_custom-add-button" data-filter="an_recom">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#add"/>
+</svg>
+                                </a>
+                            </td>
+                            <td width="13">
+                                <a href="#" class="js-custom-modal-hide screener-input-hide screener_custom-clear-button fv-button" data-filter="an_recom">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#clear"/>
+</svg>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div><select id="fs_an_recom" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="an_recom" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=an_recom_selected_filter,sh_float_u10" data-selected="">
+<option selected="selected" value="">Any</option><option value="strongbuy">Strong Buy (1)</option><option value="buybetter">Buy or better</option><option value="buy">Buy</option><option value="holdbetter">Hold or better</option><option value="hold">Hold</option><option value="holdworse">Hold or worse</option><option value="sell">Sell</option><option value="sellworse">Sell or worse</option><option value="strongsell">Strong Sell (5)</option><option value="modal">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Optionable/Shortable] body=[<table width=300><tr><td class='tooltip_tab'>Stocks with options and/or available to sell short.</td></tr></table>] delay=[500]">Option/Short</span></td>
+<td width="10%" class="filters-cells relative">
+
+                <div id="fsm_sh_opt" class="js-custom-modal" style="display: none">
+                    <table class="screener_custom-input-table is-modal" style="border-collapse: collapse; table-layout: fixed;" cellpadding="0">
+                        <tr>
+                            <td style="position: relative">
+                                <input id="fsmi_sh_opt" class="js-custom-modal-edit screener-input-text h fv-input is-highlight w-full cursor-pointer pr-5 font-medium" data-filter="sh_opt" type="text" value="" readonly>
+                                <a href="#" class="edit-custom-modal-button fv-button js-custom-modal-edit screener_custom-add-button" data-filter="sh_opt">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#add"/>
+</svg>
+                                </a>
+                            </td>
+                            <td width="13">
+                                <a href="#" class="js-custom-modal-hide screener-input-hide screener_custom-clear-button fv-button" data-filter="sh_opt">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#clear"/>
+</svg>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div><select id="fs_sh_opt" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="sh_opt" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=sh_float_u10,sh_opt_selected_filter" data-selected="">
+<option selected="selected" value="">Any</option><option value="option">Optionable</option><option value="short">Shortable</option><option value="notoption">Not optionable</option><option value="notshort">Not shortable</option><option value="optionshort">Optionable and shortable</option><option value="optionnotshort">Optionable and not shortable</option><option value="notoptionshort">Not optionable and shortable</option><option value="notoptionnotshort">Not optionable and not shortable</option><option value="restricted">Short Sale Restricted (Elite only)</option><option value="restricted">Halted (Elite only)</option><optgroup label="Shares"><option value="so10k">Over 10K available to short</option><option value="so100k">Over 100K available to short</option><option value="so1m">Over 1M available to short</option><option value="so10m">Over 10M available to short</option></optgroup><optgroup label="USD"><option value="uo1m">Over $1M available to short</option><option value="uo10m">Over $10M available to short</option><option value="uo100m">Over $100M available to short</option><option value="uo1b">Over $1B available to short</option></optgroup><option value="modal">Custom (Elite only)</option></select>
+</td>
+</tr><tr>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Earnings Date] body=[<table width=300><tr><td class='tooltip_tab'>Date when company reports earnings.</td></tr></table>] delay=[500]">Earnings Date</span></td>
+<td width="10%" class="filters-cells relative">
+
+                <div id="fsm_earningsdate" class="js-custom-modal" style="display: none">
+                    <table class="screener_custom-input-table is-modal" style="border-collapse: collapse; table-layout: fixed;" cellpadding="0">
+                        <tr>
+                            <td style="position: relative">
+                                <input id="fsmi_earningsdate" class="js-custom-modal-edit screener-input-text h fv-input is-highlight w-full cursor-pointer pr-5 font-medium" data-filter="earningsdate" type="text" value="" readonly>
+                                <a href="#" class="edit-custom-modal-button fv-button js-custom-modal-edit screener_custom-add-button" data-filter="earningsdate">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#add"/>
+</svg>
+                                </a>
+                            </td>
+                            <td width="13">
+                                <a href="#" class="js-custom-modal-hide screener-input-hide screener_custom-clear-button fv-button" data-filter="earningsdate">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#clear"/>
+</svg>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div><select id="fs_earningsdate" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="earningsdate" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=earningsdate_selected_filter,sh_float_u10" data-selected="">
+<option selected="selected" value="">Any</option><option value="today">Today</option><option value="todaybefore">Today Before Market Open</option><option value="todayafter">Today After Market Close</option><option value="tomorrow">Tomorrow</option><option value="tomorrowbefore">Tomorrow Before Market Open</option><option value="tomorrowafter">Tomorrow After Market Close</option><option value="yesterday">Yesterday</option><option value="yesterdaybefore">Yesterday Before Market Open</option><option value="yesterdayafter">Yesterday After Market Close</option><option value="nextdays5">Next 5 Days</option><option value="prevdays5">Previous 5 Days</option><option value="thisweek">This Week</option><option value="nextweek">Next Week</option><option value="prevweek">Previous Week</option><option value="thismonth">This Month</option><option value="modal">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Average Volume] body=[<table width=300><tr><td class='tooltip_tab'>The average number of shares traded in a security per day.</td></tr></table>] offsetx=[-305] delay=[500]">Average Volume</span></td>
+<td width="10%" class="filters-cells relative">
+<select id="fs_sh_avgvol" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="sh_avgvol" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=sh_avgvol_selected_filter,sh_float_u10" data-selected="">
+<option selected="selected" value="">Any</option><option value="u50">Under 50K</option><option value="u100">Under 100K</option><option value="u500">Under 500K</option><option value="u750">Under 750K</option><option value="u1000">Under 1M</option><option value="o50">Over 50K</option><option value="o100">Over 100K</option><option value="o200">Over 200K</option><option value="o300">Over 300K</option><option value="o400">Over 400K</option><option value="o500">Over 500K</option><option value="o750">Over 750K</option><option value="o1000">Over 1M</option><option value="o2000">Over 2M</option><option value="100to500">100K to 500K</option><option value="100to1000">100K to 1M</option><option value="500to1000">500K to 1M</option><option value="500to10000">500K to 10M</option><option value="frange">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Relative Volume] body=[<table width=300><tr><td class='tooltip_tab'>Ratio between current volume and 3-month average, intraday adjusted.</td></tr></table>] offsetx=[-305] delay=[500]">Relative Volume</span></td>
+<td width="10%" class="filters-cells relative">
+<select id="fs_sh_relvol" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="sh_relvol" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=sh_float_u10,sh_relvol_selected_filter" data-selected="">
+<option selected="selected" value="">Any</option><option value="o10">Over 10</option><option value="o5">Over 5</option><option value="o3">Over 3</option><option value="o2">Over 2</option><option value="o1.5">Over 1.5</option><option value="o1">Over 1</option><option value="o0.75">Over 0.75</option><option value="o0.5">Over 0.5</option><option value="o0.25">Over 0.25</option><option value="u2">Under 2</option><option value="u1.5">Under 1.5</option><option value="u1">Under 1</option><option value="u0.75">Under 0.75</option><option value="u0.5">Under 0.5</option><option value="u0.25">Under 0.25</option><option value="u0.1">Under 0.1</option><option value="frange">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Current Volume] body=[<table width=300><tr><td class='tooltip_tab'>Number of shares traded today.</td></tr></table>] offsetx=[-305] delay=[500]">Current Volume</span></td>
+<td width="10%" class="filters-cells relative">
+
+                <div id="fsm_sh_curvol" class="js-custom-modal" style="display: none">
+                    <table class="screener_custom-input-table is-modal" style="border-collapse: collapse; table-layout: fixed;" cellpadding="0">
+                        <tr>
+                            <td style="position: relative">
+                                <input id="fsmi_sh_curvol" class="js-custom-modal-edit screener-input-text h fv-input is-highlight w-full cursor-pointer pr-5 font-medium" data-filter="sh_curvol" type="text" value="" readonly>
+                                <a href="#" class="edit-custom-modal-button fv-button js-custom-modal-edit screener_custom-add-button" data-filter="sh_curvol">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#add"/>
+</svg>
+                                </a>
+                            </td>
+                            <td width="13">
+                                <a href="#" class="js-custom-modal-hide screener-input-hide screener_custom-clear-button fv-button" data-filter="sh_curvol">
+                                    <svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#clear"/>
+</svg>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div><select id="fs_sh_curvol" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="sh_curvol" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=sh_curvol_selected_filter,sh_float_u10" data-selected="">
+<option selected="selected" value="">Any</option><optgroup label="Shares"><option value="u50">Under 50K</option><option value="u100">Under 100K</option><option value="u500">Under 500K</option><option value="u750">Under 750K</option><option value="u1000">Under 1M</option><option value="o0">Over 0</option><option value="o50">Over 50K</option><option value="o100">Over 100K</option><option value="o200">Over 200K</option><option value="o300">Over 300K</option><option value="o400">Over 400K</option><option value="o500">Over 500K</option><option value="o750">Over 750K</option><option value="o1000">Over 1M</option><option value="o2000">Over 2M</option><option value="o5000">Over 5M</option><option value="o10000">Over 10M</option><option value="o20000">Over 20M</option><option value="o50sf">Over 50% shares float</option><option value="o100sf">Over 100% shares float</option></optgroup><optgroup label="USD"><option value="uusd1000">Under $1M</option><option value="uusd10000">Under $10M</option><option value="uusd100000">Under $100M</option><option value="uusd1000000">Under $1B</option><option value="ousd1000">Over $1M</option><option value="ousd10000">Over $10M</option><option value="ousd100000">Over $100M</option><option value="ousd1000000">Over $1B</option></optgroup><option value="modal">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Trades] body=[<table width=300><tr><td class='tooltip_tab'>Number of trades today.</td></tr></table>] delay=[500]">Trades</span></td>
+<td width="10%" class="filters-cells relative">
+<div class="absolute inset-0 z-10" onclick="window.location='elite?utm_source=finviz&utm_medium=banner&utm_campaign=screener-filter';"></div><select id="fs_sh_trades" style="width:100%" class="screener-combo-text fv-select" disabled onchange="ScreenerSelectOnChange(this)" data-filter="sh_trades" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=sh_float_u10,sh_trades_selected_filter" data-selected="">
+<option selected="selected" value="">Elite only</option></select>
+</td>
+</tr><tr>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Price $] body=[<table width=300><tr><td class='tooltip_tab'>The current stock price.</td></tr></table>] delay=[500]">Price $</span></td>
+<td width="10%" class="filters-cells relative">
+<select id="fs_sh_price" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="sh_price" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=sh_float_u10,sh_price_selected_filter" data-selected="">
+<option selected="selected" value="">Any</option><option value="u1">Under $1</option><option value="u2">Under $2</option><option value="u3">Under $3</option><option value="u4">Under $4</option><option value="u5">Under $5</option><option value="u7">Under $7</option><option value="u10">Under $10</option><option value="u15">Under $15</option><option value="u20">Under $20</option><option value="u30">Under $30</option><option value="u40">Under $40</option><option value="u50">Under $50</option><option value="o1">Over $1</option><option value="o2">Over $2</option><option value="o3">Over $3</option><option value="o4">Over $4</option><option value="o5">Over $5</option><option value="o7">Over $7</option><option value="o10">Over $10</option><option value="o15">Over $15</option><option value="o20">Over $20</option><option value="o30">Over $30</option><option value="o40">Over $40</option><option value="o50">Over $50</option><option value="o60">Over $60</option><option value="o70">Over $70</option><option value="o80">Over $80</option><option value="o90">Over $90</option><option value="o100">Over $100</option><option value="1to5">$1 to $5</option><option value="1to10">$1 to $10</option><option value="1to20">$1 to $20</option><option value="5to10">$5 to $10</option><option value="5to20">$5 to $20</option><option value="5to50">$5 to $50</option><option value="10to20">$10 to $20</option><option value="10to50">$10 to $50</option><option value="20to50">$20 to $50</option><option value="50to100">$50 to $100</option><option value="frange">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Target Price] body=[<table width=300><tr><td class='tooltip_tab'>Analysts' mean target price.</td></tr></table>] delay=[500]">Target Price</span></td>
+<td width="10%" class="filters-cells relative">
+<select id="fs_targetprice" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="targetprice" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=sh_float_u10,targetprice_selected_filter" data-selected="">
+<option selected="selected" value="">Any</option><option value="a50">50% Above Price</option><option value="a40">40% Above Price</option><option value="a30">30% Above Price</option><option value="a20">20% Above Price</option><option value="a10">10% Above Price</option><option value="a5">5% Above Price</option><option value="above">Above Price</option><option value="below">Below Price</option><option value="b5">5% Below Price</option><option value="b10">10% Below Price</option><option value="b20">20% Below Price</option><option value="b30">30% Below Price</option><option value="b40">40% Below Price</option><option value="b50">50% Below Price</option><option value="modal">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[IPO Date] body=[<table width=300><tr><td class='tooltip_tab'>Date when company had an IPO.</td></tr></table>] delay=[500]">IPO Date</span></td>
+<td width="10%" class="filters-cells relative">
+<select id="fs_ipodate" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="ipodate" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=ipodate_selected_filter,sh_float_u10" data-selected="">
+<option selected="selected" value="">Any</option><option value="today">Today</option><option value="yesterday">Yesterday</option><option value="prevweek">In the last week</option><option value="prevmonth">In the last month</option><option value="prevquarter">In the last quarter</option><option value="prevyear">In the last year</option><option value="prev2yrs">In the last 2 years</option><option value="prev3yrs">In the last 3 years</option><option value="prev5yrs">In the last 5 years</option><option value="more1">More than a year ago</option><option value="more5">More than 5 years ago</option><option value="more10">More than 10 years ago</option><option value="more15">More than 15 years ago</option><option value="more20">More than 20 years ago</option><option value="more25">More than 25 years ago</option><option value="modal">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Shares Outstanding] body=[<table width=300><tr><td class='tooltip_tab'>Shares outstanding represent the total number of shares issued by a corporation and held by its shareholders.</td></tr></table>] delay=[500]">Shares Outstanding</span></td>
+<td width="10%" class="filters-cells relative">
+<select id="fs_sh_outstanding" style="width:100%" class="screener-combo-text fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="sh_outstanding" data-url="v=111&f=sh_float_u10" data-url-selected="v=111&f=sh_float_u10,sh_outstanding_selected_filter" data-selected="">
+<option selected="selected" value="">Any</option><option value="u1">Under 1M</option><option value="u5">Under 5M</option><option value="u10">Under 10M</option><option value="u20">Under 20M</option><option value="u50">Under 50M</option><option value="u100">Under 100M</option><option value="o1">Over 1M</option><option value="o2">Over 2M</option><option value="o5">Over 5M</option><option value="o10">Over 10M</option><option value="o20">Over 20M</option><option value="o50">Over 50M</option><option value="o100">Over 100M</option><option value="o200">Over 200M</option><option value="o500">Over 500M</option><option value="o1000">Over 1000M</option><option value="frange">Custom (Elite only)</option></select>
+</td>
+<td width="10%" class="filters-cells" align="center">
+<span class="screener-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Float] body=[<table width=300><tr><td class='tooltip_tab'>Float is the number of stock shares that are available for trading to the public. This doesn't include shares held by insiders.</td></tr></table>] delay=[500]">Float</span></td>
+<td width="10%" class="filters-cells relative">
+<select id="fs_sh_float" style="width:100%" class="screener-combo-text is-selected is-highlight fv-select" onchange="ScreenerSelectOnChange(this)" data-filter="sh_float" data-url="v=111" data-url-selected="v=111&f=sh_float_selected_filter" data-selected="u10">
+<option value="">Any</option><option value="u1">Under 1M</option><option value="u5">Under 5M</option><option selected="selected" value="u10">Under 10M</option><option value="u20">Under 20M</option><option value="u50">Under 50M</option><option value="u100">Under 100M</option><option value="o1">Over 1M</option><option value="o2">Over 2M</option><option value="o5">Over 5M</option><option value="o10">Over 10M</option><option value="o20">Over 20M</option><option value="o50">Over 50M</option><option value="o100">Over 100M</option><option value="o200">Over 200M</option><option value="o500">Over 500M</option><option value="o1000">Over 1000M</option><option value="u10p">Under 10%</option><option value="u20p">Under 20%</option><option value="u30p">Under 30%</option><option value="u40p">Under 40%</option><option value="u50p">Under 50%</option><option value="u60p">Under 60%</option><option value="u70p">Under 70%</option><option value="u80p">Under 80%</option><option value="u90p">Under 90%</option><option value="o10p">Over 10%</option><option value="o20p">Over 20%</option><option value="o30p">Over 30%</option><option value="o40p">Over 40%</option><option value="o50p">Over 50%</option><option value="o60p">Over 60%</option><option value="o70p">Over 70%</option><option value="o80p">Over 80%</option><option value="o90p">Over 90%</option><option value="modal">Custom (Elite only)</option></select>
+</td>
+</tr>
+</table>
+</form>
+</div>
+</td>
+</tr>
+<tr><td>
+<div id="screener-content">
+<table id="screener-views-table" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<table width="100%" cellpadding="0" cellspacing="0" class="screener-view-table screener-view-switch">
+<tr>
+<td class="screener-view-button is-screener is-active" style="cursor:pointer;"><a href="screener.ashx?v=111&f=sh_float_u10">Overview</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="screener.ashx?v=121&f=sh_float_u10">Valuation</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="screener.ashx?v=161&f=sh_float_u10">Financial</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="screener.ashx?v=131&f=sh_float_u10">Ownership</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="screener.ashx?v=141&f=sh_float_u10">Performance</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="screener.ashx?v=171&f=sh_float_u10">Technical</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="screener.ashx?v=181&f=sh_float_u10">ETF</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="screener.ashx?v=191&f=sh_float_u10">ETF Perf</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="screener.ashx?v=151&f=sh_float_u10">Custom</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="screener.ashx?v=211&f=sh_float_u10">Charts</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="screener.ashx?v=411&f=sh_float_u10">Tickers</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="screener.ashx?v=311&f=sh_float_u10">Basic</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="screener.ashx?v=351&f=sh_float_u10">TA</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="screener.ashx?v=321&f=sh_float_u10">News</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="screener.ashx?v=341&f=sh_float_u10">Snapshot</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="screener.ashx?v=711&f=sh_float_u10">Maps</a></td>
+<td class="screener-view-button is-screener " style="cursor:pointer;"><a href="/elite?utm_source=finviz&utm_medium=banner&utm_campaign=screener-menu-stats">Stats</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td width="100%"><img src="gfx/nic2x2.gif" style="display:block;width:2px;height:6px" alt="" border="0"></td></tr>
+<tr>
+<td width="100%">
+<div class="relative w-full min-h-6"><div class="absolute bottom-0 left-0 right-0 top-0 flex justify-between items-center space-x-2">
+<div id="screener-total" class="count-text whitespace-nowrap">#1 / 1255 Total</div>
+<div id="screener-fullview-links" class="fullview-links flex space-x-3 lg:space-x-5 justify-center items-center overflow-hidden text-link"">
+<span class="tab-link whitespace-nowrap">
+<a href="javascript:SavePortfolio(1255,'v=111&f=sh_float_u10')" class="tab-link">save as portfolio</a> | 
+<a data-testid="screener-create-alert-link" href="/elite?utm_source=finviz&utm_medium=banner&utm_campaign=screener-create-alert" class="tab-link">create alert</a></span>
+<span style="white-space: nowrap"><span class="count-text"><b>Refresh:</b></span> <a href="/screener.ashx?v=111&f=sh_float_u10&ar=180" class="tab-link ">3min</a> | <a href="/screener.ashx?v=111&f=sh_float_u10" class="tab-link font-bold">off</a></div><div id="screener-page-select" class="flex justify-center items-center space-x-1"><span class="screener-combo-button screener_button fv-button is-arrow is-disabled"><svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#arrowBackward"/>
+</svg></span><select id="pageSelect"  class="pages-combo fv-select" onchange='trackPagination("top");url="screener.ashx?v=111&f=sh_float_u10&r=123456";row="r=" + document.getElementById("pageSelect").value;url=url.replace(/r=123456/,row);window.location=url;'>
+<option selected="selected" value=1>Page 1 / 63</option><option value=21>Page 2 / 63</option><option value=41>Page 3 / 63</option><option value=61>Page 4 / 63</option><option value=81>Page 5 / 63</option><option value=101>Page 6 / 63</option><option value=121>Page 7 / 63</option><option value=141>Page 8 / 63</option><option value=161>Page 9 / 63</option><option value=181>Page 10 / 63</option><option value=201>Page 11 / 63</option><option value=221>Page 12 / 63</option><option value=241>Page 13 / 63</option><option value=261>Page 14 / 63</option><option value=281>Page 15 / 63</option><option value=301>Page 16 / 63</option><option value=321>Page 17 / 63</option><option value=341>Page 18 / 63</option><option value=361>Page 19 / 63</option><option value=381>Page 20 / 63</option><option value=401>Page 21 / 63</option><option value=421>Page 22 / 63</option><option value=441>Page 23 / 63</option><option value=461>Page 24 / 63</option><option value=481>Page 25 / 63</option><option value=501>Page 26 / 63</option><option value=521>Page 27 / 63</option><option value=541>Page 28 / 63</option><option value=561>Page 29 / 63</option><option value=581>Page 30 / 63</option><option value=601>Page 31 / 63</option><option value=621>Page 32 / 63</option><option value=641>Page 33 / 63</option><option value=661>Page 34 / 63</option><option value=681>Page 35 / 63</option><option value=701>Page 36 / 63</option><option value=721>Page 37 / 63</option><option value=741>Page 38 / 63</option><option value=761>Page 39 / 63</option><option value=781>Page 40 / 63</option><option value=801>Page 41 / 63</option><option value=821>Page 42 / 63</option><option value=841>Page 43 / 63</option><option value=861>Page 44 / 63</option><option value=881>Page 45 / 63</option><option value=901>Page 46 / 63</option><option value=921>Page 47 / 63</option><option value=941>Page 48 / 63</option><option value=961>Page 49 / 63</option><option value=981>Page 50 / 63</option><option value=1001>Page 51 / 63</option><option value=1021>Page 52 / 63</option><option value=1041>Page 53 / 63</option><option value=1061>Page 54 / 63</option><option value=1081>Page 55 / 63</option><option value=1101>Page 56 / 63</option><option value=1121>Page 57 / 63</option><option value=1141>Page 58 / 63</option><option value=1161>Page 59 / 63</option><option value=1181>Page 60 / 63</option><option value=1201>Page 61 / 63</option><option value=1221>Page 62 / 63</option><option value=1241>Page 63 / 63</option></select>
+<a href="screener.ashx?v=111&f=sh_float_u10&r=21" class="screener-combo-button screener_button fv-button is-arrow" onclick="trackPagination('top')"><svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#arrowForward"/>
+</svg></a></div>
+</div></div>
+</td>
+</tr>
+<tr><td width="100%" colspan="30"><img src="gfx/nic2x2.gif" style="display:block;width:2px;height:6px" alt="" border="0"></td></tr>
+<tr id="screener-table"><td><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td>
+<table class="styled-table-new is-rounded is-tabular-nums w-full screener_table">
+<thead>
+<tr align="center" valign="middle">
+<th class="table-header cursor-pointer" align="right" onclick="window.location='screener.ashx?v=111&f=sh_float_u10'">No.</th>
+<th class="table-header cursor-pointer is-selected is-ascending" align="left" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&o=-ticker'">Ticker<svg width="16" height="16" class="inline-block -mt-[3px] -mb-0.5">
+    <use href="/assets/dist-icons/icons.svg?rev=25#chevronUp"/>
+</svg></th>
+<th class="table-header cursor-pointer" align="left" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&o=company'">Company</th>
+<th class="table-header cursor-pointer" align="left" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&o=sector'">Sector</th>
+<th class="table-header cursor-pointer" align="left" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&o=industry'">Industry</th>
+<th class="table-header cursor-pointer" align="left" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&o=country'">Country</th>
+<th class="table-header cursor-pointer" align="right" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&o=marketcap'">Market Cap</th>
+<th class="table-header cursor-pointer" align="right" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&o=pe'">P/E</th>
+<th class="table-header cursor-pointer" align="right" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&o=price'">Price</th>
+<th class="table-header cursor-pointer" align="right" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&o=change'">Change</th>
+<th class="table-header cursor-pointer" align="right" onclick="window.location='screener.ashx?v=111&f=sh_float_u10&o=volume'">Volume</th>
+</thead>
+<tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=AACG&ty=c&p=d&b=1" ">1</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AACG&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AACG&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>ATA Creativity Global ADR</b>Education & Training Services <span>•</span> China <span>•</span> 28.37M </div>] offsetx=[100] offsety=[0] delay=[0]"><a href="quote.ashx?t=AACG&ty=c&p=d&b=1" class="tab-link">AACG</a></td><td height="10" align="left"><a href="quote.ashx?t=AACG&ty=c&p=d&b=1" ">ATA Creativity Global ADR</a></td><td height="10" align="left"><a href="quote.ashx?t=AACG&ty=c&p=d&b=1" ">Consumer Defensive</a></td><td height="10" align="left"><a href="quote.ashx?t=AACG&ty=c&p=d&b=1" ">Education & Training Services</a></td><td height="10" align="left"><a href="quote.ashx?t=AACG&ty=c&p=d&b=1" ">China</a></td><td height="10" align="right"><a href="quote.ashx?t=AACG&ty=c&p=d&b=1" ">28.37M</a></td><td height="10" align="right"><a href="quote.ashx?t=AACG&ty=c&p=d&b=1" ">-</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AACG&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AACG&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>ATA Creativity Global ADR</b>Education & Training Services <span>•</span> China <span>•</span> 28.37M </div>] offsetx=[-324] offsety=[20] delay=[0]"><a href="quote.ashx?t=AACG&ty=c&p=d&b=1" "><span class="color-text is-positive">0.89</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AACG&ty=c&p=d&b=1" "><span class="color-text is-positive">1.23%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AACG&ty=c&p=d&b=1" ">6,230</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=AAME&ty=c&p=d&b=1" ">2</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AAME&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AAME&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Atlantic American Corp</b>Insurance - Life <span>•</span> USA <span>•</span> 41.20M </div>] offsetx=[100] offsety=[0] delay=[0]"><a href="quote.ashx?t=AAME&ty=c&p=d&b=1" class="tab-link">AAME</a></td><td height="10" align="left"><a href="quote.ashx?t=AAME&ty=c&p=d&b=1" ">Atlantic American Corp</a></td><td height="10" align="left"><a href="quote.ashx?t=AAME&ty=c&p=d&b=1" ">Financial</a></td><td height="10" align="left"><a href="quote.ashx?t=AAME&ty=c&p=d&b=1" ">Insurance - Life</a></td><td height="10" align="left"><a href="quote.ashx?t=AAME&ty=c&p=d&b=1" ">USA</a></td><td height="10" align="right"><a href="quote.ashx?t=AAME&ty=c&p=d&b=1" ">41.20M</a></td><td height="10" align="right"><a href="quote.ashx?t=AAME&ty=c&p=d&b=1" ">-</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AAME&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AAME&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Atlantic American Corp</b>Insurance - Life <span>•</span> USA <span>•</span> 41.20M </div>] offsetx=[-324] offsety=[20] delay=[0]"><a href="quote.ashx?t=AAME&ty=c&p=d&b=1" "><span class="color-text is-positive">2.02</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AAME&ty=c&p=d&b=1" "><span class="color-text is-positive">1.00%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AAME&ty=c&p=d&b=1" ">6,361</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=ABTS&ty=c&p=d&b=1" ">3</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ABTS&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ABTS&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Abits Group Inc</b>Capital Markets <span>•</span> Hong Kong <span>•</span> 12.87M </div>] offsetx=[100] offsety=[0] delay=[0]"><a href="quote.ashx?t=ABTS&ty=c&p=d&b=1" class="tab-link">ABTS</a></td><td height="10" align="left"><a href="quote.ashx?t=ABTS&ty=c&p=d&b=1" ">Abits Group Inc</a></td><td height="10" align="left"><a href="quote.ashx?t=ABTS&ty=c&p=d&b=1" ">Financial</a></td><td height="10" align="left"><a href="quote.ashx?t=ABTS&ty=c&p=d&b=1" ">Capital Markets</a></td><td height="10" align="left"><a href="quote.ashx?t=ABTS&ty=c&p=d&b=1" ">Hong Kong</a></td><td height="10" align="right"><a href="quote.ashx?t=ABTS&ty=c&p=d&b=1" ">12.87M</a></td><td height="10" align="right"><a href="quote.ashx?t=ABTS&ty=c&p=d&b=1" ">-</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ABTS&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ABTS&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Abits Group Inc</b>Capital Markets <span>•</span> Hong Kong <span>•</span> 12.87M </div>] offsetx=[-324] offsety=[20] delay=[0]"><a href="quote.ashx?t=ABTS&ty=c&p=d&b=1" "><span class="color-text is-negative">5.43</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ABTS&ty=c&p=d&b=1" "><span class="color-text is-negative">-7.65%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ABTS&ty=c&p=d&b=1" ">28,096</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=AC&ty=c&p=d&b=1" ">4</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AC&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AC&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Associated Capital Group Inc</b>Asset Management <span>•</span> USA <span>•</span> 794.06M </div>] offsetx=[100] offsety=[0] delay=[0]"><a href="quote.ashx?t=AC&ty=c&p=d&b=1" class="tab-link">AC</a></td><td height="10" align="left"><a href="quote.ashx?t=AC&ty=c&p=d&b=1" ">Associated Capital Group Inc</a></td><td height="10" align="left"><a href="quote.ashx?t=AC&ty=c&p=d&b=1" ">Financial</a></td><td height="10" align="left"><a href="quote.ashx?t=AC&ty=c&p=d&b=1" ">Asset Management</a></td><td height="10" align="left"><a href="quote.ashx?t=AC&ty=c&p=d&b=1" ">USA</a></td><td height="10" align="right"><a href="quote.ashx?t=AC&ty=c&p=d&b=1" ">794.06M</a></td><td height="10" align="right"><a href="quote.ashx?t=AC&ty=c&p=d&b=1" ">20.92</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AC&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AC&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Associated Capital Group Inc</b>Asset Management <span>•</span> USA <span>•</span> 794.06M </div>] offsetx=[-324] offsety=[20] delay=[0]"><a href="quote.ashx?t=AC&ty=c&p=d&b=1" "><span class="color-text is-positive">37.57</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AC&ty=c&p=d&b=1" "><span class="color-text is-positive">0.93%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AC&ty=c&p=d&b=1" ">654</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=ACCS&ty=c&p=d&b=1" ">5</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACCS&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACCS&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>ACCESS Newswire Inc</b>Advertising Agencies <span>•</span> USA <span>•</span> 46.60M </div>] offsetx=[100] offsety=[0] delay=[0]"><a href="quote.ashx?t=ACCS&ty=c&p=d&b=1" class="tab-link">ACCS</a></td><td height="10" align="left"><a href="quote.ashx?t=ACCS&ty=c&p=d&b=1" ">ACCESS Newswire Inc</a></td><td height="10" align="left"><a href="quote.ashx?t=ACCS&ty=c&p=d&b=1" ">Communication Services</a></td><td height="10" align="left"><a href="quote.ashx?t=ACCS&ty=c&p=d&b=1" ">Advertising Agencies</a></td><td height="10" align="left"><a href="quote.ashx?t=ACCS&ty=c&p=d&b=1" ">USA</a></td><td height="10" align="right"><a href="quote.ashx?t=ACCS&ty=c&p=d&b=1" ">46.60M</a></td><td height="10" align="right"><a href="quote.ashx?t=ACCS&ty=c&p=d&b=1" ">-</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACCS&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACCS&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>ACCESS Newswire Inc</b>Advertising Agencies <span>•</span> USA <span>•</span> 46.60M </div>] offsetx=[-324] offsety=[20] delay=[0]"><a href="quote.ashx?t=ACCS&ty=c&p=d&b=1" "><span class="color-text is-positive">12.11</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ACCS&ty=c&p=d&b=1" "><span class="color-text is-positive">2.98%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ACCS&ty=c&p=d&b=1" ">7,004</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=ACNT&ty=c&p=d&b=1" ">6</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACNT&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACNT&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Ascent Industries Co</b>Steel <span>•</span> USA <span>•</span> 136.00M </div>] offsetx=[100] offsety=[0] delay=[0]"><a href="quote.ashx?t=ACNT&ty=c&p=d&b=1" class="tab-link">ACNT</a></td><td height="10" align="left"><a href="quote.ashx?t=ACNT&ty=c&p=d&b=1" ">Ascent Industries Co</a></td><td height="10" align="left"><a href="quote.ashx?t=ACNT&ty=c&p=d&b=1" ">Basic Materials</a></td><td height="10" align="left"><a href="quote.ashx?t=ACNT&ty=c&p=d&b=1" ">Steel</a></td><td height="10" align="left"><a href="quote.ashx?t=ACNT&ty=c&p=d&b=1" ">USA</a></td><td height="10" align="right"><a href="quote.ashx?t=ACNT&ty=c&p=d&b=1" ">136.00M</a></td><td height="10" align="right"><a href="quote.ashx?t=ACNT&ty=c&p=d&b=1" ">-</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACNT&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACNT&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Ascent Industries Co</b>Steel <span>•</span> USA <span>•</span> 136.00M </div>] offsetx=[-324] offsety=[20] delay=[0]"><a href="quote.ashx?t=ACNT&ty=c&p=d&b=1" "><span class="color-text is-positive">12.94</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ACNT&ty=c&p=d&b=1" "><span class="color-text is-positive">0.54%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ACNT&ty=c&p=d&b=1" ">7,743</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=ACON&ty=c&p=d&b=1" ">7</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACON&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACON&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Aclarion Inc</b>Health Information Services <span>•</span> USA <span>•</span> 4.11M </div>] offsetx=[100] offsety=[0] delay=[0]"><a href="quote.ashx?t=ACON&ty=c&p=d&b=1" class="tab-link">ACON</a></td><td height="10" align="left"><a href="quote.ashx?t=ACON&ty=c&p=d&b=1" ">Aclarion Inc</a></td><td height="10" align="left"><a href="quote.ashx?t=ACON&ty=c&p=d&b=1" ">Healthcare</a></td><td height="10" align="left"><a href="quote.ashx?t=ACON&ty=c&p=d&b=1" ">Health Information Services</a></td><td height="10" align="left"><a href="quote.ashx?t=ACON&ty=c&p=d&b=1" ">USA</a></td><td height="10" align="right"><a href="quote.ashx?t=ACON&ty=c&p=d&b=1" ">4.11M</a></td><td height="10" align="right"><a href="quote.ashx?t=ACON&ty=c&p=d&b=1" ">-</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACON&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACON&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Aclarion Inc</b>Health Information Services <span>•</span> USA <span>•</span> 4.11M </div>] offsetx=[-324] offsety=[20] delay=[0]"><a href="quote.ashx?t=ACON&ty=c&p=d&b=1" "><span class="color-text is-negative">7.07</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ACON&ty=c&p=d&b=1" "><span class="color-text is-negative">-1.81%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ACON&ty=c&p=d&b=1" ">5,714</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=ACR&ty=c&p=d&b=1" ">8</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACR&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACR&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>ACRES Commercial Realty Corp</b>REIT - Mortgage <span>•</span> USA <span>•</span> 132.28M </div>] offsetx=[100] offsety=[0] delay=[0]"><a href="quote.ashx?t=ACR&ty=c&p=d&b=1" class="tab-link">ACR</a></td><td height="10" align="left"><a href="quote.ashx?t=ACR&ty=c&p=d&b=1" ">ACRES Commercial Realty Corp</a></td><td height="10" align="left"><a href="quote.ashx?t=ACR&ty=c&p=d&b=1" ">Real Estate</a></td><td height="10" align="left"><a href="quote.ashx?t=ACR&ty=c&p=d&b=1" ">REIT - Mortgage</a></td><td height="10" align="left"><a href="quote.ashx?t=ACR&ty=c&p=d&b=1" ">USA</a></td><td height="10" align="right"><a href="quote.ashx?t=ACR&ty=c&p=d&b=1" ">132.28M</a></td><td height="10" align="right"><a href="quote.ashx?t=ACR&ty=c&p=d&b=1" "><span class="color-text is-negative">61.82</span></a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACR&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACR&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>ACRES Commercial Realty Corp</b>REIT - Mortgage <span>•</span> USA <span>•</span> 132.28M </div>] offsetx=[-324] offsety=[20] delay=[0]"><a href="quote.ashx?t=ACR&ty=c&p=d&b=1" "><span class="color-text is-positive">17.89</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ACR&ty=c&p=d&b=1" "><span class="color-text is-positive">0.56%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ACR&ty=c&p=d&b=1" ">6,262</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=ACTU&ty=c&p=d&b=1" ">9</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACTU&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACTU&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Actuate Therapeutics Inc</b>Biotechnology <span>•</span> USA <span>•</span> 120.07M </div>] offsetx=[100] offsety=[0] delay=[0]"><a href="quote.ashx?t=ACTU&ty=c&p=d&b=1" class="tab-link">ACTU</a></td><td height="10" align="left"><a href="quote.ashx?t=ACTU&ty=c&p=d&b=1" ">Actuate Therapeutics Inc</a></td><td height="10" align="left"><a href="quote.ashx?t=ACTU&ty=c&p=d&b=1" ">Healthcare</a></td><td height="10" align="left"><a href="quote.ashx?t=ACTU&ty=c&p=d&b=1" ">Biotechnology</a></td><td height="10" align="left"><a href="quote.ashx?t=ACTU&ty=c&p=d&b=1" ">USA</a></td><td height="10" align="right"><a href="quote.ashx?t=ACTU&ty=c&p=d&b=1" ">120.07M</a></td><td height="10" align="right"><a href="quote.ashx?t=ACTU&ty=c&p=d&b=1" ">-</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACTU&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACTU&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Actuate Therapeutics Inc</b>Biotechnology <span>•</span> USA <span>•</span> 120.07M </div>] offsetx=[-324] offsety=[20] delay=[0]"><a href="quote.ashx?t=ACTU&ty=c&p=d&b=1" "><span class="color-text is-negative">6.12</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ACTU&ty=c&p=d&b=1" "><span class="color-text is-negative">-0.33%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ACTU&ty=c&p=d&b=1" ">11,969</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=ACU&ty=c&p=d&b=1" ">10</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACU&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACU&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Acme United Corp</b>Household & Personal Products <span>•</span> USA <span>•</span> 164.21M </div>] offsetx=[100] offsety=[0] delay=[0]"><a href="quote.ashx?t=ACU&ty=c&p=d&b=1" class="tab-link">ACU</a></td><td height="10" align="left"><a href="quote.ashx?t=ACU&ty=c&p=d&b=1" ">Acme United Corp</a></td><td height="10" align="left"><a href="quote.ashx?t=ACU&ty=c&p=d&b=1" ">Consumer Defensive</a></td><td height="10" align="left"><a href="quote.ashx?t=ACU&ty=c&p=d&b=1" ">Household & Personal Products</a></td><td height="10" align="left"><a href="quote.ashx?t=ACU&ty=c&p=d&b=1" ">USA</a></td><td height="10" align="right"><a href="quote.ashx?t=ACU&ty=c&p=d&b=1" ">164.21M</a></td><td height="10" align="right"><a href="quote.ashx?t=ACU&ty=c&p=d&b=1" ">17.68</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACU&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ACU&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Acme United Corp</b>Household & Personal Products <span>•</span> USA <span>•</span> 164.21M </div>] offsetx=[-324] offsety=[20] delay=[0]"><a href="quote.ashx?t=ACU&ty=c&p=d&b=1" "><span class="color-text is-positive">43.32</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ACU&ty=c&p=d&b=1" "><span class="color-text is-positive">0.74%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ACU&ty=c&p=d&b=1" ">667</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=ADN&ty=c&p=d&b=1" ">11</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADN&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADN&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Advent Technologies Holdings Inc</b>Electrical Equipment & Parts <span>•</span> USA <span>•</span> 5.48M </div>] offsetx=[100] offsety=[-220] delay=[0]"><a href="quote.ashx?t=ADN&ty=c&p=d&b=1" class="tab-link">ADN</a></td><td height="10" align="left"><a href="quote.ashx?t=ADN&ty=c&p=d&b=1" ">Advent Technologies Holdings Inc</a></td><td height="10" align="left"><a href="quote.ashx?t=ADN&ty=c&p=d&b=1" ">Industrials</a></td><td height="10" align="left"><a href="quote.ashx?t=ADN&ty=c&p=d&b=1" ">Electrical Equipment & Parts</a></td><td height="10" align="left"><a href="quote.ashx?t=ADN&ty=c&p=d&b=1" ">USA</a></td><td height="10" align="right"><a href="quote.ashx?t=ADN&ty=c&p=d&b=1" ">5.48M</a></td><td height="10" align="right"><a href="quote.ashx?t=ADN&ty=c&p=d&b=1" ">-</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADN&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADN&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Advent Technologies Holdings Inc</b>Electrical Equipment & Parts <span>•</span> USA <span>•</span> 5.48M </div>] offsetx=[-324] offsety=[-264] delay=[0]"><a href="quote.ashx?t=ADN&ty=c&p=d&b=1" "><span class="color-text is-negative">2.05</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ADN&ty=c&p=d&b=1" "><span class="color-text is-negative">-0.24%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ADN&ty=c&p=d&b=1" ">6,680</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=ADTX&ty=c&p=d&b=1" ">12</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADTX&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADTX&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Aditxt Inc</b>Biotechnology <span>•</span> USA <span>•</span> 2.91M </div>] offsetx=[100] offsety=[-220] delay=[0]"><a href="quote.ashx?t=ADTX&ty=c&p=d&b=1" class="tab-link">ADTX</a></td><td height="10" align="left"><a href="quote.ashx?t=ADTX&ty=c&p=d&b=1" ">Aditxt Inc</a></td><td height="10" align="left"><a href="quote.ashx?t=ADTX&ty=c&p=d&b=1" ">Healthcare</a></td><td height="10" align="left"><a href="quote.ashx?t=ADTX&ty=c&p=d&b=1" ">Biotechnology</a></td><td height="10" align="left"><a href="quote.ashx?t=ADTX&ty=c&p=d&b=1" ">USA</a></td><td height="10" align="right"><a href="quote.ashx?t=ADTX&ty=c&p=d&b=1" ">2.91M</a></td><td height="10" align="right"><a href="quote.ashx?t=ADTX&ty=c&p=d&b=1" ">-</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADTX&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADTX&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Aditxt Inc</b>Biotechnology <span>•</span> USA <span>•</span> 2.91M </div>] offsetx=[-324] offsety=[-264] delay=[0]"><a href="quote.ashx?t=ADTX&ty=c&p=d&b=1" "><span class="color-text is-negative">1.20</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ADTX&ty=c&p=d&b=1" "><span class="color-text is-negative">-0.42%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ADTX&ty=c&p=d&b=1" ">67,302</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=ADVB&ty=c&p=d&b=1" ">13</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADVB&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADVB&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Advanced Biomed Inc</b>Diagnostics & Research <span>•</span> Taiwan <span>•</span> 17.64M </div>] offsetx=[100] offsety=[-220] delay=[0]"><a href="quote.ashx?t=ADVB&ty=c&p=d&b=1" class="tab-link">ADVB</a></td><td height="10" align="left"><a href="quote.ashx?t=ADVB&ty=c&p=d&b=1" ">Advanced Biomed Inc</a></td><td height="10" align="left"><a href="quote.ashx?t=ADVB&ty=c&p=d&b=1" ">Healthcare</a></td><td height="10" align="left"><a href="quote.ashx?t=ADVB&ty=c&p=d&b=1" ">Diagnostics & Research</a></td><td height="10" align="left"><a href="quote.ashx?t=ADVB&ty=c&p=d&b=1" ">Taiwan</a></td><td height="10" align="right"><a href="quote.ashx?t=ADVB&ty=c&p=d&b=1" ">17.64M</a></td><td height="10" align="right"><a href="quote.ashx?t=ADVB&ty=c&p=d&b=1" ">-</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADVB&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADVB&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Advanced Biomed Inc</b>Diagnostics & Research <span>•</span> Taiwan <span>•</span> 17.64M </div>] offsetx=[-324] offsety=[-264] delay=[0]"><a href="quote.ashx?t=ADVB&ty=c&p=d&b=1" "><span class="color-text is-positive">0.81</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ADVB&ty=c&p=d&b=1" "><span class="color-text is-positive">8.38%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ADVB&ty=c&p=d&b=1" ">392,461</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=ADXN&ty=c&p=d&b=1" ">14</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADXN&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADXN&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Addex Therapeutics Ltd ADR</b>Biotechnology <span>•</span> Switzerland <span>•</span> 7.42M </div>] offsetx=[100] offsety=[-220] delay=[0]"><a href="quote.ashx?t=ADXN&ty=c&p=d&b=1" class="tab-link">ADXN</a></td><td height="10" align="left"><a href="quote.ashx?t=ADXN&ty=c&p=d&b=1" ">Addex Therapeutics Ltd ADR</a></td><td height="10" align="left"><a href="quote.ashx?t=ADXN&ty=c&p=d&b=1" ">Healthcare</a></td><td height="10" align="left"><a href="quote.ashx?t=ADXN&ty=c&p=d&b=1" ">Biotechnology</a></td><td height="10" align="left"><a href="quote.ashx?t=ADXN&ty=c&p=d&b=1" ">Switzerland</a></td><td height="10" align="right"><a href="quote.ashx?t=ADXN&ty=c&p=d&b=1" ">7.42M</a></td><td height="10" align="right"><a href="quote.ashx?t=ADXN&ty=c&p=d&b=1" "><span class="color-text is-positive">2.09</span></a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADXN&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=ADXN&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Addex Therapeutics Ltd ADR</b>Biotechnology <span>•</span> Switzerland <span>•</span> 7.42M </div>] offsetx=[-324] offsety=[-264] delay=[0]"><a href="quote.ashx?t=ADXN&ty=c&p=d&b=1" "><span class="color-text is-positive">9.05</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ADXN&ty=c&p=d&b=1" "><span class="color-text is-positive">2.49%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=ADXN&ty=c&p=d&b=1" ">426</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=AEHL&ty=c&p=d&b=1" ">15</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEHL&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEHL&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Antelope Enterprise Holdings Ltd</b>Building Products & Equipment <span>•</span> China <span>•</span> 11.66M </div>] offsetx=[100] offsety=[-220] delay=[0]"><a href="quote.ashx?t=AEHL&ty=c&p=d&b=1" class="tab-link">AEHL</a></td><td height="10" align="left"><a href="quote.ashx?t=AEHL&ty=c&p=d&b=1" ">Antelope Enterprise Holdings Ltd</a></td><td height="10" align="left"><a href="quote.ashx?t=AEHL&ty=c&p=d&b=1" ">Industrials</a></td><td height="10" align="left"><a href="quote.ashx?t=AEHL&ty=c&p=d&b=1" ">Building Products & Equipment</a></td><td height="10" align="left"><a href="quote.ashx?t=AEHL&ty=c&p=d&b=1" ">China</a></td><td height="10" align="right"><a href="quote.ashx?t=AEHL&ty=c&p=d&b=1" ">11.66M</a></td><td height="10" align="right"><a href="quote.ashx?t=AEHL&ty=c&p=d&b=1" ">-</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEHL&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEHL&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Antelope Enterprise Holdings Ltd</b>Building Products & Equipment <span>•</span> China <span>•</span> 11.66M </div>] offsetx=[-324] offsety=[-264] delay=[0]"><a href="quote.ashx?t=AEHL&ty=c&p=d&b=1" "><span class="color-text is-negative">3.41</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AEHL&ty=c&p=d&b=1" "><span class="color-text is-negative">-0.58%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AEHL&ty=c&p=d&b=1" ">6,822</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=AEI&ty=c&p=d&b=1" ">16</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEI&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEI&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Alset Inc</b>Real Estate - Development <span>•</span> USA <span>•</span> 12.74M </div>] offsetx=[100] offsety=[-220] delay=[0]"><a href="quote.ashx?t=AEI&ty=c&p=d&b=1" class="tab-link">AEI</a></td><td height="10" align="left"><a href="quote.ashx?t=AEI&ty=c&p=d&b=1" ">Alset Inc</a></td><td height="10" align="left"><a href="quote.ashx?t=AEI&ty=c&p=d&b=1" ">Real Estate</a></td><td height="10" align="left"><a href="quote.ashx?t=AEI&ty=c&p=d&b=1" ">Real Estate - Development</a></td><td height="10" align="left"><a href="quote.ashx?t=AEI&ty=c&p=d&b=1" ">USA</a></td><td height="10" align="right"><a href="quote.ashx?t=AEI&ty=c&p=d&b=1" ">12.74M</a></td><td height="10" align="right"><a href="quote.ashx?t=AEI&ty=c&p=d&b=1" ">-</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEI&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEI&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Alset Inc</b>Real Estate - Development <span>•</span> USA <span>•</span> 12.74M </div>] offsetx=[-324] offsety=[-264] delay=[0]"><a href="quote.ashx?t=AEI&ty=c&p=d&b=1" "><span class="color-text is-negative">1.09</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AEI&ty=c&p=d&b=1" "><span class="color-text is-negative">-2.25%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AEI&ty=c&p=d&b=1" ">6,463</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=AEMD&ty=c&p=d&b=1" ">17</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEMD&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEMD&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Aethlon Medical Inc</b>Medical Devices <span>•</span> USA <span>•</span> 2.93M </div>] offsetx=[100] offsety=[-220] delay=[0]"><a href="quote.ashx?t=AEMD&ty=c&p=d&b=1" class="tab-link">AEMD</a></td><td height="10" align="left"><a href="quote.ashx?t=AEMD&ty=c&p=d&b=1" ">Aethlon Medical Inc</a></td><td height="10" align="left"><a href="quote.ashx?t=AEMD&ty=c&p=d&b=1" ">Healthcare</a></td><td height="10" align="left"><a href="quote.ashx?t=AEMD&ty=c&p=d&b=1" ">Medical Devices</a></td><td height="10" align="left"><a href="quote.ashx?t=AEMD&ty=c&p=d&b=1" ">USA</a></td><td height="10" align="right"><a href="quote.ashx?t=AEMD&ty=c&p=d&b=1" ">2.93M</a></td><td height="10" align="right"><a href="quote.ashx?t=AEMD&ty=c&p=d&b=1" ">-</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEMD&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEMD&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Aethlon Medical Inc</b>Medical Devices <span>•</span> USA <span>•</span> 2.93M </div>] offsetx=[-324] offsety=[-264] delay=[0]"><a href="quote.ashx?t=AEMD&ty=c&p=d&b=1" "><span class="color-text is-negative">1.13</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AEMD&ty=c&p=d&b=1" "><span class="color-text is-negative">-4.07%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AEMD&ty=c&p=d&b=1" ">107,112</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=AENT&ty=c&p=d&b=1" ">18</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AENT&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AENT&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Alliance Entertainment Holding Corporation</b>Entertainment <span>•</span> USA <span>•</span> 271.61M </div>] offsetx=[100] offsety=[-220] delay=[0]"><a href="quote.ashx?t=AENT&ty=c&p=d&b=1" class="tab-link">AENT</a></td><td height="10" align="left"><a href="quote.ashx?t=AENT&ty=c&p=d&b=1" ">Alliance Entertainment Holding Corporation</a></td><td height="10" align="left"><a href="quote.ashx?t=AENT&ty=c&p=d&b=1" ">Communication Services</a></td><td height="10" align="left"><a href="quote.ashx?t=AENT&ty=c&p=d&b=1" ">Entertainment</a></td><td height="10" align="left"><a href="quote.ashx?t=AENT&ty=c&p=d&b=1" ">USA</a></td><td height="10" align="right"><a href="quote.ashx?t=AENT&ty=c&p=d&b=1" ">271.61M</a></td><td height="10" align="right"><a href="quote.ashx?t=AENT&ty=c&p=d&b=1" ">22.97</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AENT&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AENT&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>Alliance Entertainment Holding Corporation</b>Entertainment <span>•</span> USA <span>•</span> 271.61M </div>] offsetx=[-324] offsety=[-264] delay=[0]"><a href="quote.ashx?t=AENT&ty=c&p=d&b=1" "><span class="color-text is-positive">5.33</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AENT&ty=c&p=d&b=1" "><span class="color-text is-positive">1.72%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AENT&ty=c&p=d&b=1" ">12,924</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=AEON&ty=c&p=d&b=1" ">19</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEON&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEON&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>AEON Biopharma Inc</b>Biotechnology <span>•</span> USA <span>•</span> 9.29M </div>] offsetx=[100] offsety=[-220] delay=[0]"><a href="quote.ashx?t=AEON&ty=c&p=d&b=1" class="tab-link">AEON</a></td><td height="10" align="left"><a href="quote.ashx?t=AEON&ty=c&p=d&b=1" ">AEON Biopharma Inc</a></td><td height="10" align="left"><a href="quote.ashx?t=AEON&ty=c&p=d&b=1" ">Healthcare</a></td><td height="10" align="left"><a href="quote.ashx?t=AEON&ty=c&p=d&b=1" ">Biotechnology</a></td><td height="10" align="left"><a href="quote.ashx?t=AEON&ty=c&p=d&b=1" ">USA</a></td><td height="10" align="right"><a href="quote.ashx?t=AEON&ty=c&p=d&b=1" ">9.29M</a></td><td height="10" align="right"><a href="quote.ashx?t=AEON&ty=c&p=d&b=1" "><span class="color-text is-positive">0.00</span></a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEON&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEON&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>AEON Biopharma Inc</b>Biotechnology <span>•</span> USA <span>•</span> 9.29M </div>] offsetx=[-324] offsety=[-264] delay=[0]"><a href="quote.ashx?t=AEON&ty=c&p=d&b=1" "><span class="color-text is-negative">0.82</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AEON&ty=c&p=d&b=1" "><span class="color-text is-negative">-2.23%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AEON&ty=c&p=d&b=1" ">63,676</a></td></tr><tr class="styled-row is-bordered is-rounded is-hoverable is-striped has-color-text" valign="top">
+<td height="10" align="right"><a href="quote.ashx?t=AEYE&ty=c&p=d&b=1" ">20</a></td><td height="10" align="left"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEYE&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEYE&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>AudioEye Inc</b>Software - Application <span>•</span> USA <span>•</span> 146.63M </div>] offsetx=[100] offsety=[-220] delay=[0]"><a href="quote.ashx?t=AEYE&ty=c&p=d&b=1" class="tab-link">AEYE</a></td><td height="10" align="left"><a href="quote.ashx?t=AEYE&ty=c&p=d&b=1" ">AudioEye Inc</a></td><td height="10" align="left"><a href="quote.ashx?t=AEYE&ty=c&p=d&b=1" ">Technology</a></td><td height="10" align="left"><a href="quote.ashx?t=AEYE&ty=c&p=d&b=1" ">Software - Application</a></td><td height="10" align="left"><a href="quote.ashx?t=AEYE&ty=c&p=d&b=1" ">USA</a></td><td height="10" align="right"><a href="quote.ashx?t=AEYE&ty=c&p=d&b=1" ">146.63M</a></td><td height="10" align="right"><a href="quote.ashx?t=AEYE&ty=c&p=d&b=1" ">-</a></td><td height="10" align="right"data-boxover="cssbody=[hoverchart] cssheader=[tabchrthdr] body=[<img  srcset='https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEYE&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d 1x, https://charts2-node.finviz.com/chart.ashx?cs=m&t=AEYE&tf=d&s=linear&pm=0&am=0&ct=candle_stick&tm=d&sf=2 2x' width='324' height='180' alt='' referrerPolicy='no-referrer-when-downgrade' loading='lazy'><div><b>AudioEye Inc</b>Software - Application <span>•</span> USA <span>•</span> 146.63M </div>] offsetx=[-324] offsety=[-264] delay=[0]"><a href="quote.ashx?t=AEYE&ty=c&p=d&b=1" "><span class="color-text is-positive">11.77</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AEYE&ty=c&p=d&b=1" "><span class="color-text is-positive">0.43%</span></a></td><td height="10" align="right"><a href="quote.ashx?t=AEYE&ty=c&p=d&b=1" ">22,595</a></td></tr></table></td></tr></table>
+</td>
+</tr>
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" class="count-text"><b>Filters:</b> sh_float:u10</td><td align="right" style="color:#1E6DC0"><a href="elite?utm_source=finviz&utm_medium=banner&utm_campaign=screener-export" class="tab-link">export</a></td></tr>
+</table>
+</td>
+</tr>
+<tr><td><img src="gfx/nic2x2.gif" style="display:block;width:2px;height:6px" alt="" border="0"></td></tr>
+<tr>
+<td width="100%" align="center" valign="top" id="screener_pagination" class="body-table screener_pagination">
+<a href="screener.ashx?v=111&f=sh_float_u10" class="screener-pages is-selected" onclick="trackPagination('bottom')"><b>1</b></a><a href="screener.ashx?v=111&f=sh_float_u10&r=21" class="screener-pages" onclick="trackPagination('bottom')">2</a><a href="screener.ashx?v=111&f=sh_float_u10&r=41" class="screener-pages" onclick="trackPagination('bottom')">3</a><a href="screener.ashx?v=111&f=sh_float_u10&r=61" class="screener-pages" onclick="trackPagination('bottom')">4</a><a href="screener.ashx?v=111&f=sh_float_u10&r=81" class="screener-pages" onclick="trackPagination('bottom')">5</a><a href="screener.ashx?v=111&f=sh_float_u10&r=101" class="screener-pages" onclick="trackPagination('bottom')">6</a><span class="is-ellipsis">⋯</span><a href="screener.ashx?v=111&f=sh_float_u10&r=181" class="screener-pages" onclick="trackPagination('bottom')">10</a><span class="is-ellipsis">⋯</span><a href="screener.ashx?v=111&f=sh_float_u10&r=381" class="screener-pages" onclick="trackPagination('bottom')">20</a><span class="is-ellipsis">⋯</span><a href="screener.ashx?v=111&f=sh_float_u10&r=581" class="screener-pages" onclick="trackPagination('bottom')">30</a><span class="is-ellipsis">⋯</span><a href="screener.ashx?v=111&f=sh_float_u10&r=781" class="screener-pages" onclick="trackPagination('bottom')">40</a><span class="is-ellipsis">⋯</span><a href="screener.ashx?v=111&f=sh_float_u10&r=981" class="screener-pages" onclick="trackPagination('bottom')">50</a><span class="is-ellipsis">⋯</span><a href="screener.ashx?v=111&f=sh_float_u10&r=1181" class="screener-pages" onclick="trackPagination('bottom')">60</a><span class="is-ellipsis">⋯</span><a href="screener.ashx?v=111&f=sh_float_u10&r=1241" class="screener-pages" onclick="trackPagination('bottom')">63</a><a href="screener.ashx?v=111&f=sh_float_u10&r=21" class="screener-pages is-next" onclick="trackPagination('bottom')"><svg width="16" height="16">
+    <use href="/assets/dist-icons/icons.svg?rev=25#arrowForward"/>
+</svg></a>
+</td>
+</tr>
+<tr><td><img src="gfx/nic2x2.gif" style="width:2px;height:10px" alt="" border="0"></td></tr>
+</table>
+<div id="IC_D_3x6_1"class="relative overflow-hidden flex items-center justify-center w-full mx-auto" style="width:970px;height:315px;max-height:315px"></div></div>
+</td></tr><!-- TS
+AACG|0.89|6230
+AAME|2.02|6361
+ABTS|5.43|28096
+AC|37.57|654
+ACCS|12.11|7004
+ACNT|12.94|7743
+ACON|7.07|5714
+ACR|17.89|6262
+ACTU|6.12|11969
+ACU|43.32|667
+ADN|2.05|6680
+ADTX|1.20|67302
+ADVB|0.81|392461
+ADXN|9.05|426
+AEHL|3.41|6822
+AEI|1.09|6463
+AEMD|1.13|107112
+AENT|5.33|12924
+AEON|0.82|63676
+AEYE|11.77|22595
+TE -->
+
+            <script type="text/javascript">
+                ScreenerRefreshInit(0, 1);
+            </script>
+        </table></div></div>
+            <div class="footer" style="margin-top: 20px;padding-bottom: 115px">
+                <div class="footer_links">
+                    <a class="tab-link" href="/affiliate.ashx">Affiliate</a>
+                    <span class="footer_dot"> • </span>
+                    <a class="tab-link" href="/advertise.ashx">Advertise</a>
+                    <span class="footer_dot"> • </span><a class="tab-link" href="/careers">Careers</a>
+                    <span class="footer_dot"> • </span><a class="tab-link" href="/theme">Theme Settings</a>
+                    <span class="footer_dot"> • </span>
+                    <a class="tab-link" href="/contact.ashx">Contact</a>
+                    <span class="footer_dot"> • </span>
+                    <a class="tab-link" href="/help/screener.ashx">Help</a>
+                    <span class="footer_dot"> • </span>
+                    <a class="tab-link" href="/privacy.ashx">Privacy</a>    </div>
+    Quotes delayed 15 minutes for NASDAQ, NYSE and AMEX.
+    <br>
+    Copyright © 2007-2025 FINVIZ.com. All Rights Reserved.
+    
+</div>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+            </script>
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-537M973G');</script>
+            <script>
+              function getSystemTheme() {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                  return 'Dark';
+                }
+                else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                  return 'Light';
+                }
+                return 'No Preference';
+              }
+
+              var systemTheme = getSystemTheme()
+
+              const headlessChrome = navigator.userAgent.includes('HeadlessChrome')
+              const webdriver = navigator.webdriver
+
+              let cdp = false
+              try {
+                let accessed = false
+                const e = new window.Error('ignore')
+                window.Object.defineProperty(e, 'stack', {
+                  configurable: false,
+                  enumerable: false,
+                  get: function () {
+                    accessed = true
+                    return ''
+                  },
+                })
+                // This is part of the detection and shouldn't be deleted
+                window.console.debug(e)
+                cdp = accessed
+              } catch {}
+
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              var fGaM = {
+                'dimension1': 'NotLoggedIn',
+                'dimension3': window.devicePixelRatio,
+                'layoutTheme': 'dark',
+                'systemTheme': systemTheme,
+                'bundle': 'modern',
+                'prefTheme': 'dark',
+                'themeFlag': 'legacy',
+                innerWidth: window.innerWidth,
+                innerHeight: window.innerHeight,
+                webdriver: webdriver,
+                cdp: cdp,
+                isBot: headlessChrome || webdriver || cdp,
+                icAdsVariant: 'control',
+              };
+
+              gtag('config', 'G-ZT9VQEWD4N', fGaM);
+              
+            </script>
+            <script type="text/javascript">
+        window._qevents = window._qevents || [];
+
+        (function() {
+            var elem = document.createElement('script');
+            elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+            elem.async = true;
+            elem.type = "text/javascript";
+            var scpt = document.getElementsByTagName('script')[0];
+            scpt.parentNode.insertBefore(elem, scpt);
+        })();
+
+        window._qevents.push({
+            qacct:"p-c2W8esUZ6Q8oA"
+        });
+    </script>
+    <noscript>
+        <div style="display:none;">
+            <img src="//pixel.quantserve.com/pixel/p-c2W8esUZ6Q8oA.gif" border="0" height="1" width="1" alt="Quantcast"/>
+        </div>
+    </noscript><div id="IC_D_1x1_1"class="relative overflow-hidden flex items-center justify-center w-full mx-auto"></div><div id="modal-elite-ad" class="modal-elite-ad">
+                            <div id="modal-elite-ad_content" class="modal-elite-ad_content">
+			                    <button id="modal-elite-ad-close" type="button" class="modal-elite-ad_close">×</button>
+
+                                <!--<div id="modal-elite-ad-content-0" style="display: none">
+			                        <h2>Ever heard of Finviz*Elite?</h2>
+                                    <p>
+                                        Our premium service offers you real-time quotes, advanced visualizations, technical studies, and much more.<br>
+                                        Become Elite and make informed financial decisions.
+                                    </p>
+                                    <a href="/elite?utm_source=finviz&utm_medium=banner&utm_campaign=modal-0" id="modal-elite-ad-btn-0" class="" target="_blank">Find out more</a>
+                                </div>-->
+
+                                <div id="modal-elite-ad-content-1" style="display: block">
+			                        <h2>Upgrade your FINVIZ experience</h2>
+                                    <p>
+                                        Join thousands of traders who make more informed decisions with&nbsp;our&nbsp;premium features.
+                                        Real-time quotes, advanced&nbsp;visualizations, backtesting, and much more.
+                                    </p>
+                                    <a href="/elite?utm_source=finviz&utm_medium=banner&utm_campaign=modal-1" id="modal-elite-ad-btn-1" class="modal-elite_button" target="_blank">Learn more about FINVIZ*Elite</a>
+                                </div>
+                            </div>
+                         </div><script src="/assets/dist/script/pv.cc68272e.js" async></script><script defer>window.renderScriptNotLoaded();</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"95f1ed8f382dc1cc","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.6.2","token":"e53f08f6c9e04bfd9760701085ec93b4"}' crossorigin="anonymous"></script>
+</body>
+</html>

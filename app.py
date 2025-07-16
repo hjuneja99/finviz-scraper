@@ -146,7 +146,7 @@ def run_scraper():
         from finviz_scraper import main as run_main
         run_main()
         scrape_status['status'] = 'done'
-        scrape_status['last_scraped'] = datetime.datetime.now().isoformat()
+        scrape_status['last_scraped'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
     except Exception as e:
         scrape_status['status'] = 'error'
         scrape_status['error'] = str(e)

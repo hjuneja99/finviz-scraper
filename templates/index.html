@@ -462,22 +462,10 @@
 
         // Enhanced keyboard handling for search input
         document.getElementById('searchInput').addEventListener('keydown', e => {
-            if ([' ', ',', 'Enter'].includes(e.key)) {
-                e.preventDefault();
-                addKeyword(e.target.value);
-                e.target.value = '';
-            } else if (e.key === 'Backspace' && e.target.value === '' && keywords.length > 0) {
-                e.preventDefault();
-                removeLastKeyword();
-            }
-        });
-
-        // Add shift+enter functionality for search
-        document.getElementById('searchInput').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
+                e.preventDefault();
                 if (e.shiftKey) {
                     // Shift+Enter triggers search
-                    e.preventDefault();
                     const searchInput = document.getElementById('searchInput');
                     if (searchInput.value.trim()) {
                         addKeyword(searchInput.value);
@@ -490,11 +478,17 @@
                 } else {
                     // Regular Enter adds keyword
                     if (e.target.value.trim()) {
-                        e.preventDefault();
                         addKeyword(e.target.value);
                         e.target.value = '';
                     }
                 }
+            } else if ([' ', ','].includes(e.key)) {
+                e.preventDefault();
+                addKeyword(e.target.value);
+                e.target.value = '';
+            } else if (e.key === 'Backspace' && e.target.value === '' && keywords.length > 0) {
+                e.preventDefault();
+                removeLastKeyword();
             }
         });
 

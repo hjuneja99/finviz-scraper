@@ -141,13 +141,20 @@ scrape_status = {
 def run_scraper():
     global scrape_status
     try:
+        print("Starting scraper...")
         scrape_status['status'] = 'scraping'
         scrape_status['error'] = None
         from finviz_scraper import main as run_main
+        print("Running finviz_scraper.main()...")
         run_main()
+        print("Scraping completed successfully!")
         scrape_status['status'] = 'done'
         scrape_status['last_scraped'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+        print(f"Set last_scraped to: {scrape_status['last_scraped']}")
     except Exception as e:
+        print(f"Error in run_scraper: {e}")
+        import traceback
+        traceback.print_exc()
         scrape_status['status'] = 'error'
         scrape_status['error'] = str(e)
 

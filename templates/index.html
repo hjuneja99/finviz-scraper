@@ -71,7 +71,7 @@
 
         .search-controls {
             display: grid;
-            grid-template-columns: 1fr auto auto;
+            grid-template-columns: 1fr auto auto auto;
             gap: 15px;
             align-items: center;
         }
@@ -143,6 +143,36 @@
 
         .search-btn:active {
             transform: translateY(0);
+        }
+
+        .scrape-btn {
+            padding: 12px 25px;
+            font-size: 14px;
+            font-weight: 600;
+            background: linear-gradient(135deg, #0f9d58 0%, #43e97b 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-left: 10px;
+        }
+
+        .scrape-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(15, 157, 88, 0.4);
+        }
+
+        .scrape-btn:active {
+            transform: translateY(0);
+        }
+
+        .scrape-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
         }
 
         .results-section {
@@ -381,7 +411,7 @@
                     <span>M</span>
                 </div>
                 <button class="search-btn" onclick="searchStocks()">Search</button>
-                <button id="scrapeBtn" class="search-btn" style="background: linear-gradient(135deg, #0f9d58 0%, #43e97b 100%); margin-left: 10px;" onclick="triggerScrape()">
+                <button id="scrapeBtn" class="scrape-btn" onclick="triggerScrape()">
                     ▶️ Scrape Finviz
                 </button>
             </div>
@@ -411,6 +441,13 @@
             renderKeywordTags();
         }
 
+        function removeLastKeyword() {
+            if (keywords.length > 0) {
+                keywords.pop();
+                renderKeywordTags();
+            }
+        }
+
         function renderKeywordTags() {
             const wrap = document.getElementById('keywordTags');
             wrap.innerHTML = keywords
@@ -423,13 +460,41 @@
                 .join('');
         }
 
-        // Whenever the user presses space, comma, or Enter inside searchInput,
-        // treat the current value as a keyword and reset the box.
+        // Enhanced keyboard handling for search input
         document.getElementById('searchInput').addEventListener('keydown', e => {
             if ([' ', ',', 'Enter'].includes(e.key)) {
                 e.preventDefault();
                 addKeyword(e.target.value);
                 e.target.value = '';
+            } else if (e.key === 'Backspace' && e.target.value === '' && keywords.length > 0) {
+                e.preventDefault();
+                removeLastKeyword();
+            }
+        });
+
+        // Add shift+enter functionality for search
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                if (e.shiftKey) {
+                    // Shift+Enter triggers search
+                    e.preventDefault();
+                    const searchInput = document.getElementById('searchInput');
+                    if (searchInput.value.trim()) {
+                        addKeyword(searchInput.value);
+                    }
+                    if (keywords.length > 0) {
+                        searchStocks();
+                    } else {
+                        alert('Please enter at least one keyword');
+                    }
+                } else {
+                    // Regular Enter adds keyword
+                    if (e.target.value.trim()) {
+                        e.preventDefault();
+                        addKeyword(e.target.value);
+                        e.target.value = '';
+                    }
+                }
             }
         });
 
@@ -546,18 +611,17 @@
             window.open(`https://finviz.com/quote.ashx?t=${ticker}`, '_blank', 'noopener');
         }
 
-        // Allow Enter key to trigger search
-        document.getElementById('searchInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                // Only trigger search if box is empty (all keywords entered)
-                if (!e.target.value.trim()) {
-                    searchStocks();
-                }
-            }
-        });
+
 
         async function triggerScrape() {
             const btn = document.getElementById('scrapeBtn');
+            if (btn.disabled) {
+                alert('Scraping is already in progress.');
+                return;
+            }
+            if (!confirm('Are you sure you want to start scraping Finviz? This will take a few minutes.')) {
+                return;
+            }
             btn.disabled = true;
             btn.textContent = '⏳ Scraping...';
             setScrapeStatusBar('Scraping Finviz...');
